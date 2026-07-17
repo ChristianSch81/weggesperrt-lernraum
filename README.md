@@ -4,17 +4,19 @@ Interaktive HTML-Lernumgebung zu Grit Poppes Roman *Weggesperrt* für die Aleman
 
 Erstellt von Christian Schwend.
 
-## Lernwege
+## Lernpakete
 
 - Mindeststandard M10: Grundzüge wiedergeben und textbezogen antworten
 - Regelstandard R10: Zusammenhänge rekonstruieren, analysieren und begründen
 - Expertenstandard E10: Transfer leisten und diskursiv reflektieren
 
-Jeder Lernweg enthält acht Stationen mit Schreibaufgaben, Selbstchecks, Kurztests, Fortschrittsanzeige sowie Export und Import des lokal gespeicherten Lernstands.
+Jedes Lernpaket enthält acht Stationen mit Schreibaufgaben, Selbstchecks, Kurztests, Fortschrittsanzeige sowie Export und Import des lokal gespeicherten Lernstands.
 
 ## Start
 
-Die Datei `index.html` lokal im Browser öffnen. Die Lernumgebung funktioniert ohne Installation und ohne Server.
+Die Datei `docs/index.html` lokal im Browser öffnen. Die Lernumgebung funktioniert ohne Installation und ohne Server.
+
+Der Ordner `docs/` enthält die vollständige veröffentlichungsfähige Website. Für GitHub Pages kann in den Repository-Einstellungen unter **Pages** der Branch `main` mit dem Verzeichnis `/docs` ausgewählt werden.
 
 ## Datenschutz und Quellen
 

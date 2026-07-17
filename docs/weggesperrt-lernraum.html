@@ -11,7 +11,9 @@
   <div class="app">
     <aside class="sidebar">
       <div class="brand-row">
-        <img src="./asw-logo.png" alt="Alemannenschule Wutöschingen">
+        <a href="https://asw-wutoeschingen.de/" target="_blank" rel="noopener noreferrer" aria-label="Website der Alemannenschule Wutöschingen öffnen">
+          <img src="./asw-logo.png" alt="Alemannenschule Wutöschingen">
+        </a>
         <div><h1>Weggesperrt</h1><p>Deutsch · Literatur · Phase 10</p></div>
       </div>
 
@@ -32,9 +34,6 @@
       <div class="sidebar-tools">
         <a href="./index.html">Startseite</a>
         <button id="resetBtn" type="button">Zurücksetzen</button>
-        <button id="exportBtn" type="button">Export</button>
-        <button id="importBtn" type="button">Import</button>
-        <input id="importFile" class="hidden" type="file" accept="application/json,.json">
       </div>
       <span class="import-status" id="importStatus" aria-live="polite"></span>
     </aside>
@@ -43,8 +42,10 @@
       <header class="topbar">
         <div><h2 id="courseTitle">Deutsch: Literatur Phase 10</h2><div class="path" id="currentPath">Überblick</div></div>
         <div class="top-actions">
-          <button class="button" id="overviewBtn" type="button">Überblick</button>
-          <button class="button" id="printBtn" type="button">Drucken</button>
+          <a class="button" href="./index.html">Überblick</a>
+          <button class="button" id="exportBtn" type="button">Export</button>
+          <button class="button" id="importBtn" type="button">Import</button>
+          <input id="importFile" class="hidden" type="file" accept="application/json,.json">
         </div>
       </header>
 

@@ -480,8 +480,6 @@
     reader.readAsText(file);
   }
 
-  el("overviewBtn").addEventListener("click", showOverview);
-  el("printBtn").addEventListener("click", () => window.print());
   el("resetBtn").addEventListener("click", () => {
     if (!confirm(`Fortschritt für ${level.label} wirklich zurücksetzen?`)) return;
     localStorage.removeItem(storageKey); state = emptyState(); showOverview();
