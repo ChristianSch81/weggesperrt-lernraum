@@ -63,16 +63,16 @@
           <section class="section">
             <h2>Deine Teillernziele</h2>
             <p class="section-intro">Die Ziele und Hilfen passen sich deiner gewählten Niveaustufe an.</p>
+            <div class="level-profile" id="levelProfile" aria-live="polite"></div>
             <ul class="target-list" id="targetList"></ul>
           </section>
 
           <section class="section">
-            <h2>Deine Lernstatistik</h2>
-            <div class="stats-grid">
-              <div class="stat"><span class="stat-label">Bearbeitete Stationen</span><strong class="stat-value" id="statDone">0 / 8</strong></div>
-              <div class="stat"><span class="stat-label">Erledigte Aufgaben</span><strong class="stat-value" id="statTasks">0</strong></div>
-              <div class="stat"><span class="stat-label">Gespeicherte Wörter</span><strong class="stat-value" id="statWords">0</strong></div>
+            <div class="learning-progress-head">
+              <div><h2>Dein Lernfortschritt</h2><p class="section-intro">Wähle eine Kreisstatistik, um die passende Stationsgruppe zu öffnen.</p></div>
+              <div class="progress-legend" aria-label="Legende"><span><i class="legend-dot task-dot" aria-hidden="true"></i>Aufgaben erledigt</span><span><i class="legend-dot station-dot" aria-hidden="true"></i>Stationen abgeschlossen</span></div>
             </div>
+            <div class="ring-grid" id="ringGrid"></div>
           </section>
 
           <section class="section">

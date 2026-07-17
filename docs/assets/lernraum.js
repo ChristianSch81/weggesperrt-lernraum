@@ -5,7 +5,11 @@
     mindest: {
       code: "M10",
       label: "Mindeststandard",
-      short: "Fundamentum · reaktiv",
+      short: "Reproduktion · reaktiv",
+      process: "Reproduktion (Vorlage wiederholen)",
+      profile: "Grundzüge wiedergeben und sich gegenstandsbezogen äußern. Du arbeitest mit klaren Hilfen und sicherst das Fundament.",
+      operators: ["Wiedergeben", "Beschreiben"],
+      placeholder: "Satzstarter: Im Roman … / Das erkennt man daran, dass …",
       hero: "Den Roman sicher erschließen",
       intro: "Du sicherst zentrale Handlungsschritte, Figuren, Räume und historische Grundinformationen. Satzstarter, Begriffshilfen und überschaubare Schreibaufträge unterstützen dich.",
       goals: [
@@ -21,6 +25,10 @@
       code: "R10",
       label: "Regelstandard",
       short: "Rekonstruktion · aktiv",
+      process: "Rekonstruktion (Zusammenhänge durchdringen)",
+      profile: "Hintergründe benennen, Zusammenhänge rekonstruieren und adressatenbezogen begründen. Du handelst zunehmend selbstständig.",
+      operators: ["Rekonstruieren", "Analysieren"],
+      placeholder: "Strukturhilfe: Aussage – Romanbeleg – Erklärung der Wirkung",
       hero: "Zusammenhänge analysieren und begründen",
       intro: "Du rekonstruierst Ursachen und Folgen, untersuchst Sprache und Macht und formulierst begründete Urteile. Dabei verknüpfst du Romanbelege mit historischen Informationen.",
       goals: [
@@ -36,6 +44,10 @@
       code: "E10",
       label: "Expertenstandard",
       short: "Transformation · konstruktiv",
+      process: "Transformation (Übertragung und Transfer)",
+      profile: "Transfer leisten, diskursiv reflektieren und konstruktive Lösungen entwickeln. Du prüfst Perspektiven und Grenzen deines Urteils.",
+      operators: ["Transfer leisten", "Reflektieren"],
+      placeholder: "Strukturhilfe: These – Gegenposition – Abwägung – begründeter Transfer",
       hero: "Transfer leisten und Positionen reflektieren",
       intro: "Du prüfst Deutungen, reflektierst konkurrierende Perspektiven und überträgst Erkenntnisse auf Fragen von Menschenwürde, Erinnerungskultur und demokratischem Handeln.",
       goals: [
@@ -178,7 +190,7 @@
       tasks: {
         mindest: [
           { title: "Argumente sammeln", prompt: "Nenne je zwei Argumente von Anja und Tom aus ihrem Streit. Ordne sie den Werten Sicherheit oder Engagement zu.", min: 80, criteria: ["Ich nenne vier Argumente.", "Ich ordne die Werte passend zu.", "Ich beziehe mich auf die Szene."] },
-          { title: "Eigene Position", prompt: "Entscheide dich begründet: Welche Position überzeugt dich in dieser Situation mehr?", min: 65, criteria: ["Ich formuliere eine klare Position.", "Ich nenne einen Grund und ein Gegenargument."] }
+          { title: "Position wiedergeben", prompt: "Gib in drei bis vier Sätzen wieder, welche Position dich in dieser Situation mehr überzeugt. Nenne dazu ein Argument der Figur und ein passendes Textbeispiel.", min: 55, criteria: ["Ich gebe eine Position verständlich wieder.", "Ich nenne ein Argument der Figur.", "Ich beziehe mich auf ein Textbeispiel."] }
         ],
         regel: [
           { title: "Argumentationsvergleich", prompt: "Vergleiche Motive, Risiken und Werte beider Figuren. Beziehe die Montagsdemonstrationen in die Bewertung ein.", min: 160, criteria: ["Ich untersuche beide Figuren ausgewogen.", "Ich ordne Motive, Risiken und Werte.", "Ich nutze historischen Kontext."] },
@@ -220,6 +232,13 @@
     "Eine App meldet den Eltern dauerhaft den Standort ihres Kindes."
   ];
 
+  const PROGRESS_GROUPS = [
+    { title: "Einstieg & Handlung", range: "Stationen 1–2", ids: ["einstieg", "weg"] },
+    { title: "Räume & Sprache", range: "Stationen 3–4", ids: ["raeume", "sprache"] },
+    { title: "Geschichte & Würde", range: "Stationen 5–6", ids: ["quellen", "wuerde"] },
+    { title: "Dilemma & Transfer", range: "Stationen 7–8", ids: ["dilemma", "abschluss"] }
+  ];
+
   const params = new URLSearchParams(location.search);
   const levelId = LEVELS[params.get("niveau")] ? params.get("niveau") : "regel";
   const level = LEVELS[levelId];
@@ -250,6 +269,7 @@
     el("levelBadge").textContent = `${level.label} ${level.code}`;
     el("heroTitle").textContent = level.hero;
     el("heroText").textContent = level.intro;
+    el("levelProfile").innerHTML = `<div><span class="profile-code">${esc(level.code)}</span><strong>${esc(level.process)}</strong><p>${esc(level.profile)}</p></div><div class="profile-operators"><span>Operatoren</span>${level.operators.map(operator => `<b>${esc(operator)}</b>`).join("")}</div>`;
     el("targetList").innerHTML = level.goals.map(goal => `<li>${esc(goal)}</li>`).join("");
     document.querySelectorAll("[data-level-link]").forEach(link => {
       if (link.dataset.levelLink === levelId) link.setAttribute("aria-current", "page");
@@ -275,15 +295,40 @@
     el("stampGrid").querySelectorAll("[data-stamp]").forEach(button => button.addEventListener("click", () => showStation(button.dataset.stamp)));
   }
 
+  function expectedTaskKeys(module) {
+    const keys = module.tasks[levelId].map((_, index) => taskKey(module.id, index));
+    keys.push(taskKey(module.id, "quiz"));
+    if (module.spectrum) keys.push(taskKey(module.id, "spectrum"));
+    return keys;
+  }
+
+  function renderRingStats() {
+    const completed = completedSet();
+    const ringGrid = el("ringGrid");
+    ringGrid.innerHTML = PROGRESS_GROUPS.map((group, groupIndex) => {
+      const modules = group.ids.map(moduleById);
+      const stationDone = modules.filter(module => completed.has(module.id)).length;
+      const taskKeys = modules.flatMap(expectedTaskKeys);
+      const taskDone = taskKeys.filter(key => state.taskDone[key]).length;
+      const stationPercent = Math.round(stationDone / modules.length * 100);
+      const taskPercent = Math.round(taskDone / taskKeys.length * 100);
+      return `<button class="ring-card" type="button" data-progress-group="${groupIndex}" aria-label="${esc(group.title)}: ${taskPercent} Prozent der Aufgaben erledigt, ${stationPercent} Prozent der Stationen abgeschlossen">
+        <span class="progress-ring" style="--station-progress:${stationPercent};--task-progress:${taskPercent}" aria-hidden="true"><strong class="ring-value">${taskPercent}%</strong></span>
+        <span class="ring-copy"><strong>${esc(group.title)}</strong><span>${esc(group.range)}</span><small>${taskDone} / ${taskKeys.length} Aufgaben · ${stationDone} / ${modules.length} Stationen</small></span>
+      </button>`;
+    }).join("");
+    ringGrid.querySelectorAll("[data-progress-group]").forEach(button => button.addEventListener("click", () => {
+      const group = PROGRESS_GROUPS[Number(button.dataset.progressGroup)];
+      const targetId = group.ids.find(id => !completed.has(id)) || group.ids[0];
+      showStation(targetId);
+    }));
+  }
+
   function updateOverviewStats() {
     const done = state.completed.length;
-    const taskTotal = Object.values(state.taskDone).filter(Boolean).length;
-    const words = Object.values(state.answers).reduce((sum, value) => sum + wordCount(value), 0);
     el("progressText").textContent = `${done} / ${MODULES.length}`;
     el("progressFill").style.width = `${Math.round(done / MODULES.length * 100)}%`;
-    el("statDone").textContent = `${done} / ${MODULES.length}`;
-    el("statTasks").textContent = String(taskTotal);
-    el("statWords").textContent = String(words);
+    renderRingStats();
     renderStampGrid();
     renderNav();
   }
@@ -332,8 +377,8 @@
     const checked = state.criteria[key] || [];
     const done = !!state.taskDone[key];
     return `<article class="task-card ${done ? "complete" : ""}" data-writing-card="${index}">
-      <div class="task-head"><div><span class="task-index">Aufgabe ${index + 1}</span><h2>${esc(task.title)}</h2><p class="task-prompt">${esc(task.prompt)}</p></div><span class="task-status">${done ? "erledigt" : "offen"}</span></div>
-      <div class="field"><label for="answer_${module.id}_${index}">Deine Antwort</label><textarea id="answer_${module.id}_${index}" data-answer-index="${index}" placeholder="Schreibe hier in vollständigen Sätzen.">${esc(value)}</textarea><div class="counter"><span data-word-count>${wordCount(value)} Wörter</span><span>Orientierung: mindestens ${task.min} Wörter</span></div></div>
+      <div class="task-head"><div><span class="task-index">${esc(level.operators[index])} · Aufgabe ${index + 1}</span><h2>${esc(task.title)}</h2><p class="task-prompt">${esc(task.prompt)}</p></div><span class="task-status">${done ? "erledigt" : "offen"}</span></div>
+      <div class="field"><label for="answer_${module.id}_${index}">Deine Antwort</label><textarea id="answer_${module.id}_${index}" data-answer-index="${index}" placeholder="${esc(level.placeholder)}">${esc(value)}</textarea><div class="counter"><span data-word-count>${wordCount(value)} Wörter</span><span>Orientierung: mindestens ${task.min} Wörter</span></div></div>
       <div class="criteria" role="group" aria-label="Selbstcheck">
         <strong>Selbstcheck</strong>${task.criteria.map((criterion, criterionIndex) => `<label class="criterion"><input type="checkbox" data-criterion="${criterionIndex}" ${checked[criterionIndex] ? "checked" : ""}> <span>${esc(criterion)}</span></label>`).join("")}
       </div>
