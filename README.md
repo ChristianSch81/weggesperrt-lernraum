@@ -2,8 +2,6 @@
 
 Interaktive HTML-Lernumgebung zu Grit Poppes Roman *Weggesperrt* für die Alemannenschule Wutöschingen, Phase 10 Realschulabschluss.
 
-Erstellt von Christian Schwend.
-
 ## Lernpakete
 
 - Mindeststandard M10: Grundzüge wiedergeben und textbezogen antworten
