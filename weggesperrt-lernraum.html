@@ -1,0 +1,1913 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Weggesperrt Kontinuum</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;max-width:736px;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+</head>
+<body>
+<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Weggesperrt Kontinuum" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Weggesperrt Kontinuum&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(--background) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: light-dark(rgb(255 255 255), rgb(24 24 24));
+  --foreground: light-dark(rgb(26 28 31), rgb(255 255 255));
+  --card: color-mix(in oklab, var(--foreground) 5%, transparent);
+  --card-foreground: var(--foreground);
+  --popover: light-dark(rgb(255 255 255), rgb(45 45 45));
+  --popover-foreground: var(--foreground);
+  --primary: light-dark(rgb(51 156 255), rgb(131 195 255));
+  --primary-foreground: light-dark(rgb(255 255 255), rgb(13 13 13));
+  --secondary: light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%));
+  --secondary-foreground: var(--foreground);
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: light-dark(
+    rgb(26 28 31 / 49.4%),
+    rgb(255 255 255 / 49.8%)
+  );
+  --accent: light-dark(rgb(229 242 255), rgb(13 39 63));
+  --accent-foreground: var(--primary);
+  --destructive: light-dark(rgb(226 85 7), rgb(255 133 73));
+  --border: light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%));
+  --input: light-dark(
+    rgb(26 28 31 / 11.8%),
+    color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+  );
+  --ring: light-dark(rgb(51 156 255), rgb(131 195 255 / 76%));
+  --font-size-base: 14px;
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --radius: 12.5px;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+  --color-background-primary: var(--background);
+  --color-text-primary: var(--foreground);
+  --color-border-secondary: var(--border);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  margin: 0;
+  padding: 5px;
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: pointer;
+  font-weight: var(--viz-font-weight-medium);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: superellipse(1.5);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget &gt; :not(.card) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: superellipse(1.5);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+    [aria-pressed=&quot;true&quot;],
+    [aria-selected=&quot;true&quot;],
+    .is-selected
+  ) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;weggesperrt-lernraum&quot; class=&quot;wl-shell&quot;&gt;
+  &lt;style&gt;
+    #weggesperrt-lernraum {
+      color: var(--foreground);
+      background: var(--background);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;
+      min-width: 0;
+      --wl-red-soft: color-mix(in srgb, var(--destructive) 76%, var(--card));
+      --wl-red-deep: color-mix(in srgb, var(--destructive) 84%, var(--foreground));
+    }
+    #weggesperrt-lernraum * { box-sizing: border-box; }
+    #weggesperrt-lernraum .wl-cover {
+      aspect-ratio: 16 / 10;
+      min-height: 430px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 24px;
+      padding: clamp(24px, 6vw, 58px);
+      margin-bottom: 22px;
+      color: var(--primary-foreground);
+      background:
+        linear-gradient(145deg, var(--wl-red-deep), var(--wl-red-soft));
+      overflow: hidden;
+      position: relative;
+    }
+    #weggesperrt-lernraum .wl-cover::after {
+      content: &quot;&quot;;
+      position: absolute;
+      width: 45%;
+      aspect-ratio: 1;
+      right: -15%;
+      bottom: -38%;
+      border: 1px solid color-mix(in srgb, var(--primary-foreground) 28%, transparent);
+      border-radius: 50%;
+    }
+    #weggesperrt-lernraum .wl-cover-head,
+    #weggesperrt-lernraum .wl-cover-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+    }
+    #weggesperrt-lernraum .wl-cover-logo-wrap {
+      width: 82px;
+      height: 82px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+    }
+    #weggesperrt-lernraum .wl-cover-logo {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+    }
+    #weggesperrt-lernraum .wl-cover-label {
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      text-align: right;
+    }
+    #weggesperrt-lernraum .wl-cover-main {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(180px, .6fr);
+      gap: 28px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    #weggesperrt-lernraum .wl-cover-kicker {
+      margin: 0 0 12px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      opacity: .82;
+    }
+    #weggesperrt-lernraum .wl-cover h1 {
+      margin: 0 0 12px;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+    #weggesperrt-lernraum .wl-cover-subtitle {
+      margin: 0;
+      max-width: 38ch;
+    }
+    #weggesperrt-lernraum .wl-cover-icon-wrap {
+      display: grid;
+      place-items: center;
+    }
+    #weggesperrt-lernraum .wl-cover-icon {
+      width: 100%;
+      max-width: 230px;
+      height: auto;
+      display: block;
+    }
+    #weggesperrt-lernraum .wl-cover-author strong { display: block; margin-top: 3px; }
+    #weggesperrt-lernraum .wl-cover-class { text-align: right; }
+    #weggesperrt-lernraum .wl-topbar,
+    #weggesperrt-lernraum .wl-toolbar,
+    #weggesperrt-lernraum .wl-section-head,
+    #weggesperrt-lernraum .wl-actions,
+    #weggesperrt-lernraum .wl-progress-label,
+    #weggesperrt-lernraum .wl-task-meta,
+    #weggesperrt-lernraum .wl-source-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    #weggesperrt-lernraum .wl-topbar {
+      padding: 10px 0 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    #weggesperrt-lernraum .wl-brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
+    #weggesperrt-lernraum .wl-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      color: var(--primary-foreground);
+      background: var(--wl-red-deep);
+      border-radius: 50%;
+      flex: 0 0 auto;
+    }
+    #weggesperrt-lernraum .wl-brand-copy { min-width: 0; }
+    #weggesperrt-lernraum .wl-brand-name { font-weight: 500; letter-spacing: .08em; }
+    #weggesperrt-lernraum .wl-subtitle { color: var(--muted-foreground); }
+    #weggesperrt-lernraum .wl-toolbar { padding: 16px 0 10px; }
+    #weggesperrt-lernraum .wl-layout {
+      display: grid;
+      grid-template-columns: minmax(210px, .78fr) minmax(0, 2fr);
+      gap: 24px;
+      padding: 10px 0 18px;
+      align-items: start;
+    }
+    #weggesperrt-lernraum .wl-sidebar { min-width: 0; }
+    #weggesperrt-lernraum .wl-main { min-width: 0; }
+    #weggesperrt-lernraum .wl-progress-label { margin-bottom: 7px; }
+    #weggesperrt-lernraum .wl-progress-track {
+      height: 8px;
+      background: var(--muted);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 18px;
+    }
+    #weggesperrt-lernraum .wl-progress-fill {
+      height: 100%;
+      width: 0;
+      background: var(--wl-red-deep);
+      transition: width .25s ease;
+    }
+    #weggesperrt-lernraum .wl-module-list { display: grid; gap: 5px; }
+    #weggesperrt-lernraum .wl-module-btn {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 30px minmax(0, 1fr) 20px;
+      gap: 9px;
+      align-items: center;
+      padding: 10px 8px;
+      border: 0;
+      border-radius: 8px;
+      text-align: left;
+      color: var(--foreground);
+      background: transparent;
+      cursor: pointer;
+      font: inherit;
+    }
+    #weggesperrt-lernraum .wl-module-btn:hover { background: var(--accent); color: var(--accent-foreground); }
+    #weggesperrt-lernraum .wl-module-btn[aria-current=&quot;step&quot;] { background: var(--wl-red-deep); color: var(--primary-foreground); }
+    #weggesperrt-lernraum .wl-module-no {
+      width: 28px;
+      height: 28px;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      opacity: .82;
+    }
+    #weggesperrt-lernraum .wl-module-copy { min-width: 0; }
+    #weggesperrt-lernraum .wl-module-title { display: block; font-weight: 500; }
+    #weggesperrt-lernraum .wl-module-time { display: block; opacity: .72; }
+    #weggesperrt-lernraum .wl-check { visibility: hidden; }
+    #weggesperrt-lernraum .wl-module-btn.is-complete .wl-check { visibility: visible; }
+    #weggesperrt-lernraum .wl-hero {
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 18px;
+    }
+    #weggesperrt-lernraum .wl-eyebrow { color: var(--muted-foreground); margin: 0 0 5px; }
+    #weggesperrt-lernraum .wl-hero h2 { margin: 0 0 8px; }
+    #weggesperrt-lernraum .wl-hero p { margin: 0; max-width: 72ch; }
+    #weggesperrt-lernraum .wl-meta-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+    #weggesperrt-lernraum .wl-workspace {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(220px, .85fr);
+      gap: 20px;
+      align-items: start;
+    }
+    #weggesperrt-lernraum .wl-section { min-width: 0; }
+    #weggesperrt-lernraum .wl-section h3 { margin: 0 0 10px; }
+    #weggesperrt-lernraum .wl-task-list { margin: 0; padding-left: 22px; }
+    #weggesperrt-lernraum .wl-task-list li { margin-bottom: 10px; padding-left: 4px; }
+    #weggesperrt-lernraum .wl-continuum { margin-top: 16px; padding: 16px; }
+    #weggesperrt-lernraum .wl-continuum[hidden] { display: none; }
+    #weggesperrt-lernraum .wl-continuum h3 { margin: 0 0 5px; }
+    #weggesperrt-lernraum .wl-spectrum-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 16px;
+      font-weight: 500;
+    }
+    #weggesperrt-lernraum .wl-spectrum {
+      height: 96px;
+      margin: 0 10px 12px;
+      position: relative;
+    }
+    #weggesperrt-lernraum .wl-spectrum-line {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      height: 4px;
+      transform: translateY(-50%);
+      background: linear-gradient(90deg, var(--viz-series-2), var(--wl-red-deep));
+    }
+    #weggesperrt-lernraum .wl-spectrum-marker {
+      width: 26px;
+      height: 26px;
+      display: grid;
+      place-items: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--primary-foreground);
+      background: var(--wl-red-deep);
+      transition: left .18s ease, top .18s ease;
+    }
+    #weggesperrt-lernraum .wl-spectrum-marker.is-selected {
+      outline: 3px solid var(--ring);
+      outline-offset: 2px;
+    }
+    #weggesperrt-lernraum .wl-spectrum-controls { margin-top: 12px; }
+    #weggesperrt-lernraum .wl-spectrum-list { margin: 14px 0 0; padding-left: 22px; }
+    #weggesperrt-lernraum .wl-spectrum-list li { margin-bottom: 6px; }
+    #weggesperrt-lernraum .wl-evidence {
+      margin-top: 16px;
+      padding: 16px;
+    }
+    #weggesperrt-lernraum .wl-evidence label { display: block; margin-bottom: 7px; font-weight: 500; }
+    #weggesperrt-lernraum .wl-evidence textarea { min-height: 132px; resize: vertical; }
+    #weggesperrt-lernraum .wl-save-state { min-height: 1.4em; color: var(--muted-foreground); margin-top: 7px; }
+    #weggesperrt-lernraum .wl-side-stack { display: grid; gap: 18px; }
+    #weggesperrt-lernraum .wl-compact-list { margin: 8px 0 0; padding-left: 20px; }
+    #weggesperrt-lernraum .wl-compact-list li { margin-bottom: 7px; }
+    #weggesperrt-lernraum .wl-question {
+      margin: 0;
+      padding-left: 14px;
+      border-left: 3px solid var(--wl-red-deep);
+    }
+    #weggesperrt-lernraum .wl-teacher {
+      margin-top: 18px;
+      border-top: 1px solid var(--border);
+      padding-top: 18px;
+    }
+    #weggesperrt-lernraum .wl-teacher[hidden] { display: none; }
+    #weggesperrt-lernraum .wl-teacher-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    #weggesperrt-lernraum .wl-teacher-grid h3 { margin: 0 0 8px; }
+    #weggesperrt-lernraum .wl-teacher-grid p { margin: 0; }
+    #weggesperrt-lernraum .wl-footer {
+      margin-top: 18px;
+      padding: 16px 0 6px;
+      border-top: 1px solid var(--border);
+      color: var(--muted-foreground);
+    }
+    #weggesperrt-lernraum .wl-footer a { color: var(--foreground); }
+    #weggesperrt-lernraum .wl-plan-view[hidden],
+    #weggesperrt-lernraum .wl-module-view[hidden] { display: none; }
+    #weggesperrt-lernraum .wl-plan-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    #weggesperrt-lernraum .wl-phase { min-width: 0; }
+    #weggesperrt-lernraum .wl-phase-line {
+      height: 5px;
+      background: var(--muted);
+      margin: 10px 0 14px;
+      position: relative;
+    }
+    #weggesperrt-lernraum .wl-phase-line::before {
+      content: &quot;&quot;;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--wl-red-deep);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    #weggesperrt-lernraum .wl-phase h3 { margin: 0; }
+    #weggesperrt-lernraum .wl-phase ol { margin: 0; padding-left: 20px; }
+    #weggesperrt-lernraum .wl-phase li { margin-bottom: 8px; }
+    #weggesperrt-lernraum .wl-note {
+      margin-top: 18px;
+      padding: 16px;
+      border-left: 4px solid var(--viz-series-2);
+      background: color-mix(in srgb, var(--viz-series-2) 9%, transparent);
+    }
+    #weggesperrt-lernraum .wl-note strong { display: block; margin-bottom: 5px; }
+    #weggesperrt-lernraum .wl-source-row { align-items: flex-start; }
+    #weggesperrt-lernraum .wl-source-row + .wl-source-row { margin-top: 8px; }
+    @media (max-width: 760px) {
+      #weggesperrt-lernraum .wl-layout,
+      #weggesperrt-lernraum .wl-workspace { grid-template-columns: 1fr; }
+      #weggesperrt-lernraum .wl-module-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #weggesperrt-lernraum .wl-teacher-grid,
+      #weggesperrt-lernraum .wl-plan-grid { grid-template-columns: 1fr; }
+      #weggesperrt-lernraum .wl-cover { aspect-ratio: auto; min-height: 0; }
+      #weggesperrt-lernraum .wl-cover-main { grid-template-columns: 1fr; }
+      #weggesperrt-lernraum .wl-cover-icon-wrap { max-width: 250px; }
+      #weggesperrt-lernraum .wl-cover-class { text-align: left; }
+    }
+    @media (max-width: 430px) {
+      #weggesperrt-lernraum .wl-module-list { grid-template-columns: 1fr; }
+      #weggesperrt-lernraum .wl-topbar { align-items: flex-start; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #weggesperrt-lernraum .wl-progress-fill,
+      #weggesperrt-lernraum .wl-spectrum-marker { transition: none; }
+    }
+    @media print {
+      #weggesperrt-lernraum .wl-toolbar,
+      #weggesperrt-lernraum .wl-sidebar,
+      #weggesperrt-lernraum .wl-actions { display: none !important; }
+      #weggesperrt-lernraum .wl-layout,
+      #weggesperrt-lernraum .wl-workspace { display: block; }
+      #weggesperrt-lernraum .wl-teacher { display: block !important; }
+    }
+  &lt;/style&gt;
+
+  &lt;section class=&quot;wl-cover&quot; aria-labelledby=&quot;wl-cover-title&quot;&gt;
+    &lt;div class=&quot;wl-cover-head&quot;&gt;
+      &lt;div class=&quot;card wl-cover-logo-wrap&quot;&gt;&lt;img class=&quot;wl-cover-logo&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAABfWlDQ1BJQ0MgUHJvZmlsZQAAKJF9kM9LAkEUx79qoaThoQ4dOixlQaBiG0hdApUwwYOYQVaXdV010HXY3ajo0iHoKhREXfp1qL+gLh2CzkEQFEF06i8o6hKyvXENraAHb95n3rz5MvMF7H6JsXJHCKiohpaOR4W57LzgfIEbHkoXRiRZZ5FUKgmK7/ozPu5h4/UuwLX+nv8b7ryiy4DNRTwpM80gniYeXDEYZ67Xq9GjiDc4Fy3e4Zyz+Kwxk0nHiC+JBbkk5YmfiP1ySasAdq7vy7XNFNu4Ul6Wm+/hP/Eo6uwM1QHKfuhII44oBCQwhRjCGMUErWEEICJIOxjKqsEvx6psTVsqlgwhQk4oQkKVg35BDInkL/f1t1+tXvUQGH8HHLVWL7cLXGwBfY+tnu8A8G4C59dM0qRGy0FpLxSA11OgOwv03AJdC3phTLR+5IkCnc+m+TYEOLeBes00P49Ms35Ml8mjK9XyqKmFkwcgsw4kb4C9fWCYtL2LX/s8Zxikp8BNAAAAmGVYSWZNTQAqAAAACAAGARIAAwAAAAEAAQAAARoABQAAAAEAAABWARsABQAAAAEAAABeASgAAwAAAAEAAgAAATIAAgAAABQAAABmh2kABAAAAAEAAAB6AAAAAAAAASwAAAABAAABLAAAAAEyMDIwOjA3OjA2IDA4OjA1OjI5AAACoAIABAAAAAEAAABkoAMABAAAAAEAAABkAAAAAJz7L5wAAAAJcEhZcwAALiMAAC4jAXilP3YAAAZTaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA1LjQuMCI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICAgICAgICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgICAgICAgICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgICAgICAgICB4bWxuczpleGlmPSJodHRwOi8vbnMuYWRvYmUuY29tL2V4aWYvMS4wLyIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgICAgICAgICB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIj4KICAgICAgICAgPHhtcDpNb2RpZnlEYXRlPjIwMjAtMDctMDZUMDg6MDU6MjkrMDI6MDA8L3htcDpNb2RpZnlEYXRlPgogICAgICAgICA8eG1wOk1ldGFkYXRhRGF0ZT4yMDIwLTA3LTA2VDA4OjA1OjI5KzAyOjAwPC94bXA6TWV0YWRhdGFEYXRlPgogICAgICAgICA8cGhvdG9zaG9wOkNvbG9yTW9kZT4zPC9waG90b3Nob3A6Q29sb3JNb2RlPgogICAgICAgICA8cGhvdG9zaG9wOklDQ1Byb2ZpbGU+c1JHQiBJRUM2MTk2Ni0yLjE8L3Bob3Rvc2hvcDpJQ0NQcm9maWxlPgogICAgICAgICA8ZXhpZjpQaXhlbFhEaW1lbnNpb24+NDAwPC9leGlmOlBpeGVsWERpbWVuc2lvbj4KICAgICAgICAgPGV4aWY6UGl4ZWxZRGltZW5zaW9uPjQwMDwvZXhpZjpQaXhlbFlEaW1lbnNpb24+CiAgICAgICAgIDxleGlmOkNvbG9yU3BhY2U+MTwvZXhpZjpDb2xvclNwYWNlPgogICAgICAgICA8dGlmZjpJbWFnZVdpZHRoPjQwMDwvdGlmZjpJbWFnZVdpZHRoPgogICAgICAgICA8dGlmZjpJbWFnZUxlbmd0aD40MDA8L3RpZmY6SW1hZ2VMZW5ndGg+CiAgICAgICAgIDx0aWZmOlJlc29sdXRpb25Vbml0PjI8L3RpZmY6UmVzb2x1dGlvblVuaXQ+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAg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&quot; alt=&quot;ASW-Logo&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;wl-cover-label text-small&quot;&gt;Deutsch · Literatur - Phase 10 Realschulabschluss&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;wl-cover-main&quot;&gt;
+      &lt;div&gt;
+        &lt;p class=&quot;wl-cover-kicker&quot;&gt;Interaktive Lernumgebung&lt;/p&gt;
+        &lt;h1 id=&quot;wl-cover-title&quot;&gt;Weggesperrt&lt;/h1&gt;
+        &lt;p class=&quot;wl-cover-subtitle&quot;&gt;Zum Jugendroman von Grit Poppe – lesen, verstehen und historisch urteilen.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card wl-cover-icon-wrap&quot;&gt;
+        &lt;img class=&quot;wl-cover-icon&quot; src=&quot;data:image/png;base64,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&quot; alt=&quot;Literatur-Icon mit Bücherregal&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;wl-cover-foot&quot;&gt;
+      &lt;div class=&quot;wl-cover-author&quot;&gt;&lt;span class=&quot;text-small&quot;&gt;Autor&lt;/span&gt;&lt;strong&gt;Christian Schwend&lt;/strong&gt;&lt;/div&gt;
+      &lt;div class=&quot;wl-cover-class&quot;&gt;Alemannenschule Wutöschingen&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;header class=&quot;wl-topbar&quot;&gt;
+    &lt;div class=&quot;wl-brand&quot;&gt;
+      &lt;span class=&quot;wl-mark&quot;&gt;&lt;i data-lucide=&quot;book-open&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;div class=&quot;wl-brand-copy&quot;&gt;
+        &lt;div class=&quot;wl-brand-name&quot;&gt;WEGGESPERRT&lt;/div&gt;
+        &lt;div class=&quot;wl-subtitle&quot;&gt;Lesen · verstehen · urteilen&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;viz-badge&quot;&gt;Klasse 10 · Realschule BW&lt;/span&gt;
+  &lt;/header&gt;
+
+  &lt;div class=&quot;wl-toolbar&quot;&gt;
+    &lt;div class=&quot;viz-controls&quot; aria-label=&quot;Ansicht und Rolle&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;wl-module-tab&quot; aria-pressed=&quot;true&quot;&gt;Lernpfad&lt;/button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;wl-plan-tab&quot; aria-pressed=&quot;false&quot;&gt;Unterrichtsplan&lt;/button&gt;
+      &lt;label class=&quot;form-check form-switch&quot;&gt;
+        &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;wl-teacher-toggle&quot;&gt;
+        &lt;span class=&quot;form-check-label&quot;&gt;Lehrkraft-Ansicht&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-ghost&quot; id=&quot;wl-print&quot;&gt;&lt;i data-lucide=&quot;printer&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Ansicht drucken&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;section class=&quot;wl-module-view&quot; id=&quot;wl-module-view&quot;&gt;
+    &lt;div class=&quot;wl-layout&quot;&gt;
+      &lt;aside class=&quot;wl-sidebar&quot; aria-label=&quot;Module&quot;&gt;
+        &lt;div class=&quot;wl-progress-label&quot;&gt;
+          &lt;strong&gt;Dein Lernweg&lt;/strong&gt;
+          &lt;span id=&quot;wl-progress-text&quot;&gt;0 von 8&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wl-progress-track&quot; role=&quot;progressbar&quot; aria-label=&quot;Bearbeitungsstand&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;8&quot; aria-valuenow=&quot;0&quot;&gt;
+          &lt;div class=&quot;wl-progress-fill&quot; id=&quot;wl-progress-fill&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;nav class=&quot;wl-module-list&quot; id=&quot;wl-module-list&quot;&gt;&lt;/nav&gt;
+      &lt;/aside&gt;
+
+      &lt;main class=&quot;wl-main&quot;&gt;
+        &lt;div class=&quot;wl-hero&quot;&gt;
+          &lt;p class=&quot;wl-eyebrow&quot; id=&quot;wl-part&quot;&gt;&lt;/p&gt;
+          &lt;h2 id=&quot;wl-title&quot;&gt;&lt;/h2&gt;
+          &lt;p id=&quot;wl-intro&quot;&gt;&lt;/p&gt;
+          &lt;div class=&quot;wl-meta-row&quot; id=&quot;wl-meta&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;wl-workspace&quot;&gt;
+          &lt;section class=&quot;wl-section&quot; aria-labelledby=&quot;wl-task-heading&quot;&gt;
+            &lt;div class=&quot;wl-section-head&quot;&gt;
+              &lt;h3 id=&quot;wl-task-heading&quot;&gt;Dein Auftrag&lt;/h3&gt;
+              &lt;span class=&quot;viz-badge&quot; id=&quot;wl-product&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;ol class=&quot;wl-task-list&quot; id=&quot;wl-tasks&quot;&gt;&lt;/ol&gt;
+
+            &lt;section class=&quot;card wl-continuum&quot; id=&quot;wl-continuum&quot; aria-labelledby=&quot;wl-continuum-heading&quot;&gt;
+              &lt;h3 id=&quot;wl-continuum-heading&quot;&gt;Schutz–Kontrolle-Linie&lt;/h3&gt;
+              &lt;div class=&quot;text-small&quot;&gt;Positioniere jede Situation und begründe anschließend eine deiner Entscheidungen.&lt;/div&gt;
+              &lt;div class=&quot;wl-spectrum-head&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Schutz&lt;/span&gt;&lt;span&gt;Kontrolle&lt;/span&gt;&lt;/div&gt;
+              &lt;div class=&quot;wl-spectrum&quot; id=&quot;wl-spectrum&quot; role=&quot;img&quot; aria-label=&quot;Fünf Situationen liegen in der Mitte zwischen Schutz und Kontrolle.&quot;&gt;
+                &lt;div class=&quot;wl-spectrum-line&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+                &lt;span class=&quot;wl-spectrum-marker&quot; data-spectrum-marker=&quot;0&quot;&gt;1&lt;/span&gt;
+                &lt;span class=&quot;wl-spectrum-marker&quot; data-spectrum-marker=&quot;1&quot;&gt;2&lt;/span&gt;
+                &lt;span class=&quot;wl-spectrum-marker&quot; data-spectrum-marker=&quot;2&quot;&gt;3&lt;/span&gt;
+                &lt;span class=&quot;wl-spectrum-marker&quot; data-spectrum-marker=&quot;3&quot;&gt;4&lt;/span&gt;
+                &lt;span class=&quot;wl-spectrum-marker&quot; data-spectrum-marker=&quot;4&quot;&gt;5&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;viz-controls wl-spectrum-controls&quot;&gt;
+                &lt;label class=&quot;form-label&quot; for=&quot;wl-spectrum-select&quot;&gt;Situation
+                  &lt;select class=&quot;form-select&quot; id=&quot;wl-spectrum-select&quot;&gt;
+                    &lt;option value=&quot;0&quot;&gt;1 · Notfallkontakte speichern&lt;/option&gt;
+                    &lt;option value=&quot;1&quot;&gt;2 · Heimkehrzeit festlegen&lt;/option&gt;
+                    &lt;option value=&quot;2&quot;&gt;3 · Handys bei einer Klassenarbeit einsammeln&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;4 · Standort dauerhaft mit Eltern teilen&lt;/option&gt;
+                    &lt;option value=&quot;4&quot;&gt;5 · Private Nachrichten staatlich mitlesen&lt;/option&gt;
+                  &lt;/select&gt;
+                &lt;/label&gt;
+                &lt;label class=&quot;form-label&quot; for=&quot;wl-spectrum-range&quot;&gt;Position: &lt;span id=&quot;wl-spectrum-value&quot;&gt;zwischen beiden&lt;/span&gt;
+                  &lt;input class=&quot;form-range&quot; id=&quot;wl-spectrum-range&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;50&quot;&gt;
+                &lt;/label&gt;
+              &lt;/div&gt;
+              &lt;ol class=&quot;wl-spectrum-list&quot; id=&quot;wl-spectrum-list&quot;&gt;&lt;/ol&gt;
+            &lt;/section&gt;
+
+            &lt;div class=&quot;card wl-evidence&quot;&gt;
+              &lt;label for=&quot;wl-notes&quot;&gt;Arbeitsnotiz oder Textbeleg&lt;/label&gt;
+              &lt;textarea class=&quot;form-control&quot; id=&quot;wl-notes&quot; placeholder=&quot;Notiere deine Beobachtung in eigenen Worten und ergänze die Seitenzahl …&quot;&gt;&lt;/textarea&gt;
+              &lt;div class=&quot;wl-save-state text-small&quot; id=&quot;wl-save-state&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;wl-actions&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;wl-complete&quot;&gt;&lt;i data-lucide=&quot;check&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Als bearbeitet markieren&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;wl-next&quot;&gt;Nächstes Modul &lt;i data-lucide=&quot;arrow-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+
+          &lt;aside class=&quot;wl-side-stack&quot;&gt;
+            &lt;section class=&quot;wl-section&quot;&gt;
+              &lt;h3&gt;Leitfrage&lt;/h3&gt;
+              &lt;p class=&quot;wl-question&quot; id=&quot;wl-question&quot;&gt;&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;section class=&quot;wl-section&quot;&gt;
+              &lt;h3&gt;Hilfen&lt;/h3&gt;
+              &lt;ul class=&quot;wl-compact-list&quot; id=&quot;wl-scaffolds&quot;&gt;&lt;/ul&gt;
+            &lt;/section&gt;
+            &lt;section class=&quot;wl-section&quot;&gt;
+              &lt;h3&gt;Portfolio-Check&lt;/h3&gt;
+              &lt;label class=&quot;form-check&quot;&gt;
+                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;wl-evidence-check&quot;&gt;
+                &lt;span class=&quot;form-check-label&quot;&gt;Textbeleg mit Seitenzahl&lt;/span&gt;
+              &lt;/label&gt;
+              &lt;label class=&quot;form-check&quot;&gt;
+                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;wl-own-words-check&quot;&gt;
+                &lt;span class=&quot;form-check-label&quot;&gt;In eigenen Worten&lt;/span&gt;
+              &lt;/label&gt;
+              &lt;label class=&quot;form-check&quot;&gt;
+                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;wl-reflection-check&quot;&gt;
+                &lt;span class=&quot;form-check-label&quot;&gt;Kurze Reflexion ergänzt&lt;/span&gt;
+              &lt;/label&gt;
+            &lt;/section&gt;
+          &lt;/aside&gt;
+        &lt;/div&gt;
+
+        &lt;section class=&quot;wl-teacher&quot; id=&quot;wl-teacher&quot; hidden&gt;
+          &lt;div class=&quot;wl-teacher-grid&quot;&gt;
+            &lt;div&gt;
+              &lt;h3&gt;Kompetenzfokus&lt;/h3&gt;
+              &lt;p id=&quot;wl-competence&quot;&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;h3&gt;Organisation&lt;/h3&gt;
+              &lt;p id=&quot;wl-organisation&quot;&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;h3&gt;Diagnose &amp;amp; Differenzierung&lt;/h3&gt;
+              &lt;p id=&quot;wl-differentiation&quot;&gt;&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+      &lt;/main&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;wl-plan-view&quot; id=&quot;wl-plan-view&quot; hidden&gt;
+    &lt;div class=&quot;wl-hero&quot;&gt;
+      &lt;p class=&quot;wl-eyebrow&quot;&gt;Vorschlag für 12–15 Unterrichtsstunden plus Lesezeit&lt;/p&gt;
+      &lt;h2&gt;Vom persönlichen Leseeindruck zum historisch begründeten Urteil&lt;/h2&gt;
+      &lt;p&gt;Der Lernpfad verbindet Lektürearbeit, Quellenkritik, produktives Schreiben und ein schlankes digitales Portfolio. Pflichtmodule sichern gemeinsame Grundlagen; Wahlprodukte ermöglichen Differenzierung.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;wl-plan-grid&quot;&gt;
+      &lt;section class=&quot;wl-phase&quot;&gt;
+        &lt;h3&gt;Phase 1 · Annähern&lt;/h3&gt;
+        &lt;div class=&quot;wl-phase-line&quot;&gt;&lt;/div&gt;
+        &lt;ol&gt;
+          &lt;li&gt;Einstieg: Freiheit und staatliche Kontrolle&lt;/li&gt;
+          &lt;li&gt;Teil I lesen: Anjas Weg ins Heim&lt;/li&gt;
+          &lt;li&gt;Räume, Regeln und Beziehungen erschließen&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/section&gt;
+      &lt;section class=&quot;wl-phase&quot;&gt;
+        &lt;h3&gt;Phase 2 · Untersuchen&lt;/h3&gt;
+        &lt;div class=&quot;wl-phase-line&quot;&gt;&lt;/div&gt;
+        &lt;ol&gt;
+          &lt;li&gt;Teil II: Sprache als Mittel der Macht&lt;/li&gt;
+          &lt;li&gt;Roman und historische Quellen trennen&lt;/li&gt;
+          &lt;li&gt;Menschenwürde und Verantwortung diskutieren&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/section&gt;
+      &lt;section class=&quot;wl-phase&quot;&gt;
+        &lt;h3&gt;Phase 3 · Urteilen&lt;/h3&gt;
+        &lt;div class=&quot;wl-phase-line&quot;&gt;&lt;/div&gt;
+        &lt;ol&gt;
+          &lt;li&gt;Teil III: Engagement oder Sicherheit?&lt;/li&gt;
+          &lt;li&gt;Friedliche Revolution kontextualisieren&lt;/li&gt;
+          &lt;li&gt;Portfolio präsentieren und reflektieren&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;wl-note&quot;&gt;
+      &lt;strong&gt;Traumasensibler Rahmen&lt;/strong&gt;
+      Gewalt und entwürdigende Behandlung werden quellenkritisch untersucht, nicht körperlich nachgestellt. Lernende erhalten sprachliche Hilfen, Wahlmöglichkeiten und eine angekündigte Ausstiegsoption bei belastenden Inhalten.
+    &lt;/div&gt;
+    &lt;div class=&quot;wl-teacher-grid wl-teacher&quot; id=&quot;wl-plan-teacher&quot; hidden&gt;
+      &lt;div&gt;
+        &lt;h3&gt;Leistungsnachweis&lt;/h3&gt;
+        &lt;p&gt;Portfolio aus Leselogbuch, zwei Pflichtanalysen, einem Wahlprodukt und einer Reflexion. Bewertet werden Textbezug, fachliche Richtigkeit, Argumentation, Gestaltung und Überarbeitung.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;h3&gt;Niveaudifferenzierung&lt;/h3&gt;
+        &lt;p&gt;Der Kern ist auf mittlerem Niveau angelegt. Satzstarter und Strukturhilfen stützen; offene Quellenvergleiche und mediale Produkte erweitern.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;h3&gt;Fächerverbindung&lt;/h3&gt;
+        &lt;p&gt;Deutsch trägt Textanalyse und Schreiben. Geschichte/Gemeinschaftskunde ergänzt SED-Diktatur, Grundrechte, Quellenkritik und Friedliche Revolution.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;footer class=&quot;wl-footer&quot;&gt;
+    &lt;div class=&quot;wl-source-row&quot;&gt;
+      &lt;span&gt;Grundlage: Grit Poppe, &lt;em&gt;Weggesperrt&lt;/em&gt;, und das bereitgestellte Unterrichtsmaterial von Sabine Wittmann.&lt;/span&gt;
+      &lt;a href=&quot;https://www.bildungsplaene-bw.de/%2CLde/BP2016BW_ALLG_SEK1_D_IK_10&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot;&gt;Bildungsplan Deutsch Sek I · Klasse 10&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;wl-source-row&quot;&gt;
+      &lt;span&gt;Historischer Lernort und ergänzende Quellen&lt;/span&gt;
+      &lt;a href=&quot;https://www.jugendwerkhof-torgau.de/angebote/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot;&gt;Gedenkstätte Jugendwerkhof Torgau&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  &lt;script&gt;
+    (() =&gt; {
+      const root = document.getElementById(&#x27;weggesperrt-lernraum&#x27;);
+      const modules = [
+        {
+          part: &#x27;Einstieg · vor der Lektüre&#x27;, title: &#x27;Freiheit hat Grenzen – aber wer setzt sie?&#x27;, time: &#x27;45 Min.&#x27;, form: &#x27;Think · Pair · Share&#x27;, product: &#x27;Start-Statement&#x27;,
+          intro: &#x27;Du aktivierst dein Vorwissen zur DDR und entwickelst erste Fragen an den Roman. Es geht noch nicht um richtige Antworten, sondern um begründete Vermutungen.&#x27;,
+          question: &#x27;Wann wird staatliche Erziehung zu unrechtmäßiger Kontrolle?&#x27;,
+          tasks: [&#x27;Ordne fünf Alltagssituationen auf einer Linie zwischen „Schutz“ und „Kontrolle“ ein.&#x27;, &#x27;Formuliere eine begründete Vermutung über Anjas Handlungsspielraum.&#x27;, &#x27;Notiere zwei Fragen, die der Roman für dich beantworten soll.&#x27;],
+          scaffolds: [&#x27;Satzstart: „Kontrolle wird problematisch, wenn …“&#x27;, &#x27;Trenne Vermutung und gesichertes Wissen.&#x27;, &#x27;Du darfst deine Position nach der Lektüre sichtbar ändern.&#x27;],
+          competence: &#x27;Leseerwartungen formulieren, Vorwissen aktivieren, Positionen begründen.&#x27;, organisation: &#x27;Einzelarbeit, Austausch zu zweit, kurze Positionslinie im Plenum.&#x27;, differentiation: &#x27;Begriffsbank für Schutz, Freiheit, Zwang; Erweiterung: Kriterien für legitime staatliche Eingriffe entwickeln.&#x27;
+        },
+        {
+          part: &#x27;Teil I · „Sonst wohin“ · S. 8–169&#x27;, title: &#x27;Anjas Weg ins Heim rekonstruieren&#x27;, time: &#x27;2 × 45 Min.&#x27;, form: &#x27;Leselogbuch&#x27;, product: &#x27;Ereigniskette&#x27;,
+          intro: &#x27;Du sicherst die äußere Handlung und machst sichtbar, wie sich Anjas Wissen, Gefühle und Handlungsmöglichkeiten verändern.&#x27;,
+          question: &#x27;Wie erzeugt der Roman das Gefühl, dass Anja die Kontrolle über ihr Leben verliert?&#x27;,
+          tasks: [&#x27;Fasse ausgewählte Kapitel in höchstens vier Sätzen und im Präsens zusammen.&#x27;, &#x27;Markiere pro Abschnitt Wendepunkt, offene Frage und Anjas Reaktion.&#x27;, &#x27;Verbinde drei Ereignisse durch Ursache–Folge-Pfeile und belege sie mit Seitenzahlen.&#x27;],
+          scaffolds: [&#x27;Nur das Wesentliche: Wer? Was? Warum? Folge?&#x27;, &#x27;Innere und äußere Handlung getrennt notieren.&#x27;, &#x27;Belegform: Beobachtung – Seitenzahl – Deutung.&#x27;],
+          competence: &#x27;Inhalte exzerpieren und prägnant zusammenfassen; Textstrukturen visualisieren.&#x27;, organisation: &#x27;Lesezeit individuell, Sicherung im Tandem; Kapitelkarten können verteilt werden.&#x27;, differentiation: &#x27;Kapitelraster als Stütze; Erweiterung: Erzähltempo und Perspektivnähe an einem Wendepunkt untersuchen.&#x27;
+        },
+        {
+          part: &#x27;Teil I · Räume und Regeln&#x27;, title: &#x27;Durchgangsheim und Jugendwerkhof vergleichen&#x27;, time: &#x27;90 Min.&#x27;, form: &#x27;Gruppenpuzzle&#x27;, product: &#x27;Belegmatrix&#x27;,
+          intro: &#x27;Du untersuchst Orte, Tagesablauf, Sprache, Strafen und Beziehungen. Dabei trennst du Beobachtung im Roman von deiner Bewertung.&#x27;,
+          question: &#x27;Wie formen Räume und Regeln das Verhalten der Jugendlichen?&#x27;,
+          tasks: [&#x27;Sammelt Romanbelege zu Raum, Tagesablauf, Vorschriften, Sanktionen und sozialem Miteinander.&#x27;, &#x27;Ordnet jeden Beleg einer sachlichen Beobachtung und einer möglichen Wirkung zu.&#x27;, &#x27;Vergleicht Durchgangsheim und Jugendwerkhof: Was bleibt gleich, was verschärft sich?&#x27;],
+          scaffolds: [&#x27;Nutze die Spalten „Beleg – Beobachtung – Wirkung“.&#x27;, &#x27;Wertungssignal prüfen: Ist das wirklich im Text belegt?&#x27;, &#x27;Rollen: Textsucher:in, Protokoll, Rückfrage, Präsentation.&#x27;],
+          competence: &#x27;Textbelege auswählen, Räume und Figurenkonstellationen analysieren, Ergebnisse strukturiert darstellen.&#x27;, organisation: &#x27;Fünf Expertengruppen, danach Mischgruppen; gemeinsames Tafelbild.&#x27;, differentiation: &#x27;Vorstrukturierte Kategorien; Erweiterung: Raumdarstellung als Symbol für Macht deuten.&#x27;
+        },
+        {
+          part: &#x27;Teil II · Torgau · S. 171–270&#x27;, title: &#x27;Sprache als Instrument der Macht&#x27;, time: &#x27;90 Min.&#x27;, form: &#x27;Sprachanalyse&#x27;, product: &#x27;Audio-/Textmontage&#x27;,
+          intro: &#x27;Befehle, Anredeformen und Schuldzuweisungen wirken nicht nur inhaltlich. Du untersuchst, wie sprachliche Form Macht organisiert.&#x27;,
+          question: &#x27;Was macht Sprache mit einem Menschen, wenn Widerspruch nicht vorgesehen ist?&#x27;,
+          tasks: [&#x27;Sammle Befehle aus Anjas erstem Tag in Torgau (S. 173–193) und ordne sie nach Funktion.&#x27;, &#x27;Untersuche Satzbau, Wortwahl, Wiederholung und Sprechsituation.&#x27;, &#x27;Gestalte eine kurze Montage, die die Wirkung hör- oder sichtbar macht, ohne Gewalt nachzustellen.&#x27;],
+          scaffolds: [&#x27;Funktionen: kontrollieren, beschleunigen, entpersönlichen, einschüchtern.&#x27;, &#x27;Analyse: sprachliches Mittel – Beispiel – Wirkung.&#x27;, &#x27;Alternative zum Audio: typografisches Textplakat.&#x27;],
+          competence: &#x27;Sprachliche Gestaltungsmittel funktional analysieren und mediengerecht umsetzen.&#x27;, organisation: &#x27;Textarbeit zu zweit; Wahlprodukt in Kleingruppen; gemeinsame Auswertung.&#x27;, differentiation: &#x27;Markierte Suchseiten und Funktionskarten; Erweiterung: Perspektive und erlebte Rede einbeziehen.&#x27;
+        },
+        {
+          part: &#x27;Teil II · Roman und Geschichte&#x27;, title: &#x27;Fiktion, Quelle oder Urteil?&#x27;, time: &#x27;2 × 45 Min.&#x27;, form: &#x27;Quellenwerkstatt&#x27;, product: &#x27;Quellencheck&#x27;,
+          intro: &#x27;Der Roman ermöglicht Nähe zu Anja; historische Dokumente sichern überprüfbares Wissen. Du lernst, beide Zugänge sinnvoll aufeinander zu beziehen.&#x27;,
+          question: &#x27;Was kann ein Roman zeigen – und wofür brauchen wir historische Quellen?&#x27;,
+          tasks: [&#x27;Ordne Aussagen den Kategorien Romanbeleg, historische Quelle oder persönliche Wertung zu.&#x27;, &#x27;Vergleiche eine Romanszene mit einer Information der Gedenkstätte Torgau.&#x27;, &#x27;Formuliere ein Urteil, das mindestens zwei verschiedene Belegarten transparent nutzt.&#x27;],
+          scaffolds: [&#x27;Quellencheck: Urheber – Zeit – Zweck – Aussagegrenze.&#x27;, &#x27;Formulierung: „Der Roman gestaltet …; die Quelle belegt …“&#x27;, &#x27;Unsicherheit sichtbar machen statt Lücken zu füllen.&#x27;],
+          competence: &#x27;Literarische Texte kontextualisieren, Sachtexte kritisch nutzen und Quellen nach Funktion unterscheiden.&#x27;, organisation: &#x27;Stationenarbeit mit Roman, Unterrichtsmaterial und ausgewählten Gedenkstätten-Seiten.&#x27;, differentiation: &#x27;Quellensteckbrief; Erweiterung: Widersprüche und Leerstellen zwischen Darstellungen diskutieren.&#x27;
+        },
+        {
+          part: &#x27;Teil II/III · Menschenwürde&#x27;, title: &#x27;Schuld, Verantwortung und Menschenrechte&#x27;, time: &#x27;90 Min.&#x27;, form: &#x27;Strukturiertes Streitgespräch&#x27;, product: &#x27;Begründetes Urteil&#x27;,
+          intro: &#x27;Du prüfst Schuldzuweisungen im Roman und entwickelst Kriterien für ein Urteil über staatliche Verantwortung.&#x27;,
+          question: &#x27;Wer trägt Verantwortung, wenn ein System Unrecht als Erziehung bezeichnet?&#x27;,
+          tasks: [&#x27;Rekonstruiere die Vorwürfe des Direktors und Anjas mögliche Gegenargumente (S. 226–229).&#x27;, &#x27;Prüfe die Behandlung anhand der Begriffe Menschenwürde, Freiheit und Rechtsstaatlichkeit.&#x27;, &#x27;Verfasse ein begründetes Urteil mit Einwand und Entkräftung.&#x27;],
+          scaffolds: [&#x27;Argument: Behauptung – Begründung – Beleg.&#x27;, &#x27;Gegenposition fair wiedergeben, dann prüfen.&#x27;, &#x27;Person und System nicht vorschnell gleichsetzen.&#x27;],
+          competence: &#x27;Argumentationen rekonstruieren, moralische und gesellschaftliche Fragen beurteilen, kohärent schreiben.&#x27;, organisation: &#x27;Silent discussion, Streitlinie, individuelles Schreibprodukt.&#x27;, differentiation: &#x27;Argumentkarten und Satzstarter; Erweiterung: Verantwortung von Mitläufer:innen und Institutionen differenzieren.&#x27;
+        },
+        {
+          part: &#x27;Teil III · „Draußen“ · S. 271–320&#x27;, title: &#x27;Engagement oder Sicherheit?&#x27;, time: &#x27;2 × 45 Min.&#x27;, form: &#x27;Dilemma-Diskussion&#x27;, product: &#x27;Positionspapier&#x27;,
+          intro: &#x27;Anja und Tom reagieren unterschiedlich auf Gefahr. Du nimmst beide Perspektiven ernst und setzt sie in Beziehung zur Friedlichen Revolution.&#x27;,
+          question: &#x27;Ist politisches Engagement eine Pflicht – auch wenn es die eigene Sicherheit gefährdet?&#x27;,
+          tasks: [&#x27;Sammle Anjas und Toms Argumente aus dem Streitgespräch (S. 294–297).&#x27;, &#x27;Ordne Motive, Risiken und Werte beider Positionen.&#x27;, &#x27;Beziehe die Montagsdemonstrationen ein und verfasse ein abgewogenes Positionspapier.&#x27;],
+          scaffolds: [&#x27;Perspektivtreue: Was weiß und erlebt die Figur?&#x27;, &#x27;Abwägen: Wert – Risiko – mögliche Folge.&#x27;, &#x27;Schluss: klare Position plus Bedingung oder Grenze.&#x27;],
+          competence: &#x27;Figurenperspektiven vergleichen, historische Kontexte einbeziehen, differenziert argumentieren.&#x27;, organisation: &#x27;Partnerarbeit, Fishbowl oder Schreibgespräch; abschließende Einzelreflexion.&#x27;, differentiation: &#x27;Argumenttabelle; Erweiterung: individuelles Handeln und kollektive Wirkung unterscheiden.&#x27;
+        },
+        {
+          part: &#x27;Abschluss · Transfer und Reflexion&#x27;, title: &#x27;Erinnern, urteilen, weiterfragen&#x27;, time: &#x27;2–3 × 45 Min.&#x27;, form: &#x27;Portfolio-Werkstatt&#x27;, product: &#x27;Ausstellung / Podcast / Artikel&#x27;,
+          intro: &#x27;Du verdichtest deine Ergebnisse für ein Publikum und reflektierst, wie sich dein Verständnis von Freiheit und Verantwortung verändert hat.&#x27;,
+          question: &#x27;Wie kann man über erfahrenes Unrecht informieren, ohne Betroffene auf ihre Opferrolle zu reduzieren?&#x27;,
+          tasks: [&#x27;Wähle ein Abschlussprodukt: kritische Infobroschüre, Schülerzeitungsartikel, Podcast-Skript oder digitale Ausstellung.&#x27;, &#x27;Nutze Roman, Sachquelle und eigenes Urteil; kennzeichne jede Ebene transparent.&#x27;, &#x27;Überarbeite mit Peer-Feedback und ergänze eine Lernreflexion.&#x27;],
+          scaffolds: [&#x27;Produktcheck: Zielgruppe – Kernbotschaft – Belege – Quellen.&#x27;, &#x27;Feedback: zwei Stärken, eine konkrete Überarbeitungsidee.&#x27;, &#x27;Reflexion: „Früher dachte ich …, jetzt …, offen bleibt …“&#x27;],
+          competence: &#x27;Adressatengerecht schreiben, Medien gestalten, Quellen nachweisen und den eigenen Lernprozess reflektieren.&#x27;, organisation: &#x27;Wahlgruppen, Redaktionskonferenz, Galeriegang; Portfolio-Abgabe.&#x27;, differentiation: &#x27;Produktwahl nach Stärke; gemeinsame Mindestkriterien; Erweiterung: kuratorisches Vorwort oder Quellenkommentar.&#x27;
+        }
+      ];
+
+      const spectrumSituations = [
+        &#x27;Die Schule speichert Notfallkontakte für Unfälle und Krisen.&#x27;,
+        &#x27;Eltern legen für ihr Kind eine feste Heimkehrzeit fest.&#x27;,
+        &#x27;Eine Lehrkraft sammelt vor einer Klassenarbeit alle Handys ein.&#x27;,
+        &#x27;Eine App teilt den Standort eines Jugendlichen dauerhaft mit den Eltern.&#x27;,
+        &#x27;Der Staat liest private Nachrichten ohne konkreten Verdacht mit.&#x27;
+      ];
+      const storageKey = &#x27;weggesperrt-lernraum-v1&#x27;;
+      let state = { selected: 0, complete: [], notes: {}, checks: {}, spectrum: [50, 50, 50, 50, 50], spectrumSelected: 0 };
+      let canPersist = true;
+      try {
+        const saved = JSON.parse(localStorage.getItem(storageKey) || &#x27;null&#x27;);
+        if (saved &amp;&amp; typeof saved === &#x27;object&#x27;) state = { ...state, ...saved };
+      } catch (error) {
+        canPersist = false;
+        document.getElementById(&#x27;wl-save-state&#x27;).textContent = &#x27;Lokales Speichern ist in diesem Browser nicht verfügbar.&#x27;;
+      }
+
+      const els = {
+        list: root.querySelector(&#x27;#wl-module-list&#x27;), part: root.querySelector(&#x27;#wl-part&#x27;), title: root.querySelector(&#x27;#wl-title&#x27;),
+        intro: root.querySelector(&#x27;#wl-intro&#x27;), meta: root.querySelector(&#x27;#wl-meta&#x27;), product: root.querySelector(&#x27;#wl-product&#x27;),
+        tasks: root.querySelector(&#x27;#wl-tasks&#x27;), question: root.querySelector(&#x27;#wl-question&#x27;), scaffolds: root.querySelector(&#x27;#wl-scaffolds&#x27;),
+        competence: root.querySelector(&#x27;#wl-competence&#x27;), organisation: root.querySelector(&#x27;#wl-organisation&#x27;),
+        differentiation: root.querySelector(&#x27;#wl-differentiation&#x27;), notes: root.querySelector(&#x27;#wl-notes&#x27;),
+        saveState: root.querySelector(&#x27;#wl-save-state&#x27;), complete: root.querySelector(&#x27;#wl-complete&#x27;), next: root.querySelector(&#x27;#wl-next&#x27;),
+        progressText: root.querySelector(&#x27;#wl-progress-text&#x27;), progressFill: root.querySelector(&#x27;#wl-progress-fill&#x27;),
+        progressBar: root.querySelector(&#x27;[role=&quot;progressbar&quot;]&#x27;), teacher: root.querySelector(&#x27;#wl-teacher&#x27;),
+        planTeacher: root.querySelector(&#x27;#wl-plan-teacher&#x27;), teacherToggle: root.querySelector(&#x27;#wl-teacher-toggle&#x27;),
+        moduleView: root.querySelector(&#x27;#wl-module-view&#x27;), planView: root.querySelector(&#x27;#wl-plan-view&#x27;),
+        moduleTab: root.querySelector(&#x27;#wl-module-tab&#x27;), planTab: root.querySelector(&#x27;#wl-plan-tab&#x27;),
+        continuum: root.querySelector(&#x27;#wl-continuum&#x27;), spectrum: root.querySelector(&#x27;#wl-spectrum&#x27;),
+        spectrumSelect: root.querySelector(&#x27;#wl-spectrum-select&#x27;), spectrumRange: root.querySelector(&#x27;#wl-spectrum-range&#x27;),
+        spectrumValue: root.querySelector(&#x27;#wl-spectrum-value&#x27;), spectrumList: root.querySelector(&#x27;#wl-spectrum-list&#x27;),
+        spectrumMarkers: Array.from(root.querySelectorAll(&#x27;[data-spectrum-marker]&#x27;)),
+        checks: [root.querySelector(&#x27;#wl-evidence-check&#x27;), root.querySelector(&#x27;#wl-own-words-check&#x27;), root.querySelector(&#x27;#wl-reflection-check&#x27;)]
+      };
+
+      if (!Array.isArray(state.spectrum) || state.spectrum.length !== spectrumSituations.length) {
+        state.spectrum = [50, 50, 50, 50, 50];
+      }
+      state.spectrum = state.spectrum.map(value =&gt; Math.max(0, Math.min(100, Number(value) || 0)));
+      state.spectrumSelected = Math.max(0, Math.min(spectrumSituations.length - 1, Number(state.spectrumSelected) || 0));
+
+      function save(message = &#x27;&#x27;) {
+        if (!canPersist) {
+          els.saveState.textContent = &#x27;In dieser geöffneten Sitzung vorgemerkt.&#x27;;
+          return;
+        }
+        try {
+          localStorage.setItem(storageKey, JSON.stringify(state));
+          els.saveState.textContent = message;
+        } catch (error) {
+          canPersist = false;
+          els.saveState.textContent = &#x27;Änderung konnte nicht lokal gespeichert werden.&#x27;;
+        }
+      }
+
+      function drawList() {
+        els.list.replaceChildren();
+        modules.forEach((module, index) =&gt; {
+          const button = document.createElement(&#x27;button&#x27;);
+          button.type = &#x27;button&#x27;;
+          button.className = &#x27;wl-module-btn&#x27; + (state.complete.includes(index) ? &#x27; is-complete&#x27; : &#x27;&#x27;);
+          if (index === state.selected) button.setAttribute(&#x27;aria-current&#x27;, &#x27;step&#x27;);
+          button.innerHTML = `&lt;span class=&quot;wl-module-no&quot;&gt;${index + 1}&lt;/span&gt;&lt;span class=&quot;wl-module-copy&quot;&gt;&lt;span class=&quot;wl-module-title&quot;&gt;${module.title}&lt;/span&gt;&lt;span class=&quot;wl-module-time text-small&quot;&gt;${module.time}&lt;/span&gt;&lt;/span&gt;&lt;i class=&quot;wl-check&quot; data-lucide=&quot;check&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;`;
+          button.addEventListener(&#x27;click&#x27;, () =&gt; { state.selected = index; render(); save(); });
+          els.list.appendChild(button);
+        });
+        if (window.lucide) window.lucide.createIcons({ attrs: { width: 16, height: 16 } });
+      }
+
+      function drawProgress() {
+        const count = state.complete.length;
+        const percent = Math.round(count / modules.length * 100);
+        els.progressText.textContent = `${count} von ${modules.length}`;
+        els.progressFill.style.width = `${percent}%`;
+        els.progressBar.setAttribute(&#x27;aria-valuenow&#x27;, String(count));
+      }
+
+      function describeSpectrum(value) {
+        if (value &lt; 20) return &#x27;klarer Schutz&#x27;;
+        if (value &lt; 40) return &#x27;eher Schutz&#x27;;
+        if (value &lt;= 60) return &#x27;zwischen beiden&#x27;;
+        if (value &lt;= 80) return &#x27;eher Kontrolle&#x27;;
+        return &#x27;klare Kontrolle&#x27;;
+      }
+
+      function drawSpectrum() {
+        const selected = state.spectrumSelected;
+        const offsets = [-24, -12, 0, 12, 24];
+        els.spectrumSelect.value = String(selected);
+        els.spectrumRange.value = String(state.spectrum[selected]);
+        els.spectrumValue.textContent = describeSpectrum(state.spectrum[selected]);
+        els.spectrumMarkers.forEach((marker, index) =&gt; {
+          marker.style.left = `${3 + state.spectrum[index] * 0.94}%`;
+          marker.style.top = `${50 + offsets[index]}%`;
+          marker.classList.toggle(&#x27;is-selected&#x27;, index === selected);
+        });
+        els.spectrumList.replaceChildren(...spectrumSituations.map((text, index) =&gt; {
+          const item = document.createElement(&#x27;li&#x27;);
+          item.textContent = `${text} – ${describeSpectrum(state.spectrum[index])}`;
+          return item;
+        }));
+        els.spectrum.setAttribute(&#x27;aria-label&#x27;, spectrumSituations.map((text, index) =&gt;
+          `Situation ${index + 1}: ${text} – ${describeSpectrum(state.spectrum[index])}`
+        ).join(&#x27; &#x27;));
+      }
+
+      function render() {
+        const index = Math.max(0, Math.min(modules.length - 1, Number(state.selected) || 0));
+        state.selected = index;
+        const module = modules[index];
+        els.part.textContent = module.part;
+        els.title.textContent = module.title;
+        els.intro.textContent = module.intro;
+        els.meta.innerHTML = `&lt;span class=&quot;viz-badge&quot;&gt;${module.time}&lt;/span&gt;&lt;span class=&quot;viz-badge&quot;&gt;${module.form}&lt;/span&gt;`;
+        els.product.textContent = module.product;
+        els.tasks.replaceChildren(...module.tasks.map(text =&gt; { const li = document.createElement(&#x27;li&#x27;); li.textContent = text; return li; }));
+        els.continuum.hidden = index !== 0;
+        if (index === 0) drawSpectrum();
+        els.question.textContent = module.question;
+        els.scaffolds.replaceChildren(...module.scaffolds.map(text =&gt; { const li = document.createElement(&#x27;li&#x27;); li.textContent = text; return li; }));
+        els.competence.textContent = module.competence;
+        els.organisation.textContent = module.organisation;
+        els.differentiation.textContent = module.differentiation;
+        els.notes.value = state.notes[index] || &#x27;&#x27;;
+        els.saveState.textContent = canPersist
+          ? (els.notes.value ? &#x27;Entwurf lokal gespeichert.&#x27; : &#x27;Dein Entwurf bleibt auf diesem Gerät gespeichert.&#x27;)
+          : &#x27;Dein Entwurf bleibt in dieser geöffneten Sitzung erhalten.&#x27;;
+        const moduleChecks = state.checks[index] || [false, false, false];
+        els.checks.forEach((checkbox, checkIndex) =&gt; { checkbox.checked = Boolean(moduleChecks[checkIndex]); });
+        const isComplete = state.complete.includes(index);
+        els.complete.innerHTML = isComplete ? &#x27;&lt;i data-lucide=&quot;rotate-ccw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Markierung zurücknehmen&#x27; : &#x27;&lt;i data-lucide=&quot;check&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Als bearbeitet markieren&#x27;;
+        els.next.disabled = index === modules.length - 1;
+        drawList();
+        drawProgress();
+        if (window.lucide) window.lucide.createIcons({ attrs: { width: 16, height: 16 } });
+      }
+
+      let noteTimer;
+      els.spectrumSelect.addEventListener(&#x27;change&#x27;, () =&gt; {
+        state.spectrumSelected = Number(els.spectrumSelect.value);
+        drawSpectrum();
+        save(&#x27;Einordnung gespeichert.&#x27;);
+      });
+
+      els.spectrumRange.addEventListener(&#x27;input&#x27;, () =&gt; {
+        state.spectrum[state.spectrumSelected] = Number(els.spectrumRange.value);
+        drawSpectrum();
+        save(&#x27;Einordnung gespeichert.&#x27;);
+      });
+
+      els.notes.addEventListener(&#x27;input&#x27;, () =&gt; {
+        state.notes[state.selected] = els.notes.value;
+        els.saveState.textContent = &#x27;Speichert …&#x27;;
+        clearTimeout(noteTimer);
+        noteTimer = setTimeout(() =&gt; save(&#x27;Entwurf lokal gespeichert.&#x27;), 350);
+      });
+
+      els.checks.forEach((checkbox, checkIndex) =&gt; {
+        checkbox.addEventListener(&#x27;change&#x27;, () =&gt; {
+          const values = state.checks[state.selected] || [false, false, false];
+          values[checkIndex] = checkbox.checked;
+          state.checks[state.selected] = values;
+          save(&#x27;Portfolio-Check gespeichert.&#x27;);
+        });
+      });
+
+      els.complete.addEventListener(&#x27;click&#x27;, () =&gt; {
+        const index = state.selected;
+        if (state.complete.includes(index)) state.complete = state.complete.filter(value =&gt; value !== index);
+        else state.complete = [...state.complete, index].sort((a, b) =&gt; a - b);
+        render();
+        save(state.complete.includes(index) ? &#x27;Modul als bearbeitet gespeichert.&#x27; : &#x27;Markierung zurückgenommen.&#x27;);
+      });
+
+      els.next.addEventListener(&#x27;click&#x27;, () =&gt; {
+        if (state.selected &lt; modules.length - 1) {
+          state.selected += 1;
+          render();
+          save();
+          root.querySelector(&#x27;#wl-title&#x27;).scrollIntoView({ behavior: &#x27;smooth&#x27;, block: &#x27;start&#x27; });
+        }
+      });
+
+      els.teacherToggle.addEventListener(&#x27;change&#x27;, () =&gt; {
+        const show = els.teacherToggle.checked;
+        els.teacher.hidden = !show;
+        els.planTeacher.hidden = !show;
+      });
+
+      function switchView(view) {
+        const moduleActive = view === &#x27;module&#x27;;
+        els.moduleView.hidden = !moduleActive;
+        els.planView.hidden = moduleActive;
+        els.moduleTab.classList.toggle(&#x27;btn-primary&#x27;, moduleActive);
+        els.planTab.classList.toggle(&#x27;btn-primary&#x27;, !moduleActive);
+        els.moduleTab.setAttribute(&#x27;aria-pressed&#x27;, String(moduleActive));
+        els.planTab.setAttribute(&#x27;aria-pressed&#x27;, String(!moduleActive));
+      }
+      els.moduleTab.addEventListener(&#x27;click&#x27;, () =&gt; switchView(&#x27;module&#x27;));
+      els.planTab.addEventListener(&#x27;click&#x27;, () =&gt; switchView(&#x27;plan&#x27;));
+      root.querySelector(&#x27;#wl-print&#x27;).addEventListener(&#x27;click&#x27;, () =&gt; window.print());
+      render();
+    })();
+  &lt;/script&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+
+  const getTrigger = (target) =&gt;
+    target?.nodeType === Node.ELEMENT_NODE
+      ? target.closest(&quot;[data-tooltip]&quot;)
+      : null;
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handleLeave = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    document.removeEventListener(&quot;pointerover&quot;, handlePointerOpen);
+    document.removeEventListener(&quot;pointerout&quot;, handleLeave);
+    document.removeEventListener(&quot;focusin&quot;, handleFocusIn);
+    document.removeEventListener(&quot;focusout&quot;, handleLeave);
+    document.removeEventListener(&quot;keydown&quot;, handleKeyDown);
+    document.removeEventListener(&quot;contextmenu&quot;, handleContextMenu);
+    tooltip = null;
+  };
+
+  document.addEventListener(&quot;pointerover&quot;, handlePointerOpen);
+  document.addEventListener(&quot;pointerout&quot;, handleLeave);
+  document.addEventListener(&quot;focusin&quot;, handleFocusIn);
+  document.addEventListener(&quot;focusout&quot;, handleLeave);
+  document.addEventListener(&quot;keydown&quot;, handleKeyDown);
+  document.addEventListener(&quot;contextmenu&quot;, handleContextMenu);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+</body>
+</html>

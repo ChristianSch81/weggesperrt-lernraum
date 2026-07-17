@@ -1,0 +1,6 @@
+# Quellen und lokale Arbeitsdateien nicht veröffentlichen
+*.pdf
+tmp/
+.agents/
+.codex/
+
