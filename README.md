@@ -10,7 +10,7 @@ Erstellt von Christian Schwend.
 - Regelstandard R10: Zusammenhänge rekonstruieren, analysieren und begründen
 - Expertenstandard E10: Transfer leisten und diskursiv reflektieren
 
-Jedes Lernpaket enthält acht Stationen mit Schreibaufgaben, Selbstchecks, Kurztests, Fortschrittsanzeige sowie Export und Import des lokal gespeicherten Lernstands.
+Jedes Lernpaket enthält zehn Teillernziele und zehn Stationen mit Operatorentraining, Schreibaufgaben, Selbstchecks, Kurztests, Fortschrittsanzeige sowie Export und Import des lokal gespeicherten Lernstands. Die produktive Schreibwerkstatt unterstützt Brief, E-Mail, Tagebucheintrag und inneren Monolog.
 
 ## Start
 
