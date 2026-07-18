@@ -8,7 +8,7 @@ Interaktive HTML-Lernumgebung zu Grit Poppes Roman *Weggesperrt* für die Aleman
 - Regelstandard R10: Zusammenhänge rekonstruieren, analysieren und begründen
 - Expertenstandard E10: Transfer leisten und diskursiv reflektieren
 
-Jedes Lernpaket enthält zehn Teillernziele und zehn Stationen mit Operatorentraining, Schreibaufgaben, Selbstchecks, Kurztests, Fortschrittsanzeige sowie Export und Import des lokal gespeicherten Lernstands. Die produktive Schreibwerkstatt unterstützt Brief, E-Mail, Tagebucheintrag und inneren Monolog.
+Die Lernpakete enthalten niveauabhängige Teillernziele und zehn Stationen mit Aufgaben, konkret auf den jeweiligen Schreibauftrag bezogenen Selbstchecks, ausklappbaren Tipps, Kurztests, Fortschrittsanzeige sowie Export und Import des lokal gespeicherten Lernstands. Das Operatorentraining bildet vor allem im Mindeststandard eine Grundlage. Die produktive Schreibwerkstatt unterstützt Brief, E-Mail, Tagebucheintrag und inneren Monolog.
 
 ## Start
 

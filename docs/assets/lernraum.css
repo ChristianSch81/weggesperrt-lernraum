@@ -314,11 +314,22 @@ img { max-width: 100%; }
 .task-card.complete .task-status { color: var(--green); background: var(--green-soft); }
 .field { margin-top: 16px; }
 .field label, .field-label { display: block; margin-bottom: 7px; font-weight: 800; }
+.field-label-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 12px; align-items: center; margin-bottom: 7px; }
+.field-label-row label { margin: 0; }
+.tip-button { display: inline-flex; align-items: center; gap: 7px; min-height: 38px; padding: 5px 11px 5px 6px; color: var(--red-900); background: var(--red-050); border: 1px solid #dfb8bf; border-radius: 999px; font-weight: 850; cursor: pointer; transition: background .18s ease, border-color .18s ease, transform .18s ease; }
+.tip-button:hover, .tip-button.open { background: var(--red-100); border-color: var(--red-500); transform: translateY(-1px); }
+.tip-face { display: inline-grid; place-items: center; width: 27px; height: 27px; color: #fff; background: var(--red-700); border-radius: 50%; font-size: .82rem; letter-spacing: -.08em; }
+.tip-panel { grid-column: 1 / -1; padding: 12px 14px; color: var(--blue); background: var(--blue-soft); border-left: 4px solid var(--blue); border-radius: 8px; line-height: 1.5; }
+.tip-panel[hidden] { display: none; }
+.tip-panel strong { display: block; margin-bottom: 3px; color: var(--ink); }
+.tip-panel p { margin: 0; }
 textarea, select, input[type="text"] { width: 100%; color: var(--ink); background: #fff; border: 1px solid #cdbfc1; border-radius: 8px; }
 textarea { min-height: 150px; padding: 13px; resize: vertical; line-height: 1.55; }
 select, input[type="text"] { min-height: 44px; padding: 9px 11px; }
 .counter { display: flex; justify-content: space-between; gap: 12px; margin-top: 6px; color: var(--muted); font-size: .82rem; }
 .criteria { display: grid; gap: 8px; margin-top: 16px; padding: 14px; background: var(--red-050); border-radius: 9px; }
+.selfcheck-copy { margin: 0 0 5px; color: var(--muted); line-height: 1.5; }
+.workshop-criteria .selfcheck-copy { grid-column: 1 / -1; }
 .criterion { display: flex; gap: 9px; align-items: flex-start; line-height: 1.4; }
 .criterion input { margin-top: 3px; accent-color: var(--red-700); }
 .feedback { min-height: 24px; margin-top: 12px; color: var(--muted); line-height: 1.45; }
