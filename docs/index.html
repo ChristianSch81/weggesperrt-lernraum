@@ -25,6 +25,37 @@
       </div>
     </header>
 
+    <section class="landing-progress" aria-labelledby="landingProgressTitle">
+      <div class="landing-progress-copy">
+        <p class="landing-section-kicker">Dein Lernstand auf diesem Gerät</p>
+        <h2 id="landingProgressTitle">Lernfortschritt im Überblick</h2>
+        <p>Die drei Ringe zeigen den Anteil der erledigten Aufgaben: Mindeststandard außen, Regelstandard in der Mitte und Expertenstandard innen.</p>
+        <div class="landing-progress-list" aria-label="Fortschritt nach Standard">
+          <a href="./mindeststandard/" class="landing-progress-item">
+            <span class="progress-swatch swatch-m" aria-hidden="true"></span>
+            <span><strong>M10 · Mindeststandard</strong><small>Außenring · <span id="landingMDetail">0 / 32 Aufgaben</span></small></span>
+            <b id="landingMValue">0%</b>
+          </a>
+          <a href="./regelstandard/" class="landing-progress-item">
+            <span class="progress-swatch swatch-r" aria-hidden="true"></span>
+            <span><strong>R10 · Regelstandard</strong><small>Mittelring · <span id="landingRDetail">0 / 32 Aufgaben</span></small></span>
+            <b id="landingRValue">0%</b>
+          </a>
+          <a href="./expertenstandard/" class="landing-progress-item">
+            <span class="progress-swatch swatch-e" aria-hidden="true"></span>
+            <span><strong>E10 · Expertenstandard</strong><small>Innenring · <span id="landingEDetail">0 / 32 Aufgaben</span></small></span>
+            <b id="landingEValue">0%</b>
+          </a>
+        </div>
+      </div>
+      <div class="triple-progress" id="landingProgressChart" role="img" aria-label="Mindeststandard 0 Prozent, Regelstandard 0 Prozent, Expertenstandard 0 Prozent">
+        <span class="triple-ring triple-ring-m" id="landingMRing" data-label="M" aria-hidden="true"></span>
+        <span class="triple-ring triple-ring-r" id="landingRRing" data-label="R" aria-hidden="true"></span>
+        <span class="triple-ring triple-ring-e" id="landingERing" data-label="E" aria-hidden="true"></span>
+        <span class="triple-progress-center"><strong id="landingAverageValue">0%</strong><small>gesamt</small></span>
+      </div>
+    </section>
+
     <nav class="level-grid" aria-label="Niveaustufe auswählen">
       <a class="level-card" href="./mindeststandard/">
         <span class="level-code">M10</span>
@@ -50,5 +81,6 @@
     </nav>
     <p class="landing-footer">Alemannenschule Wutöschingen · Autor: Christian Schwend</p>
   </main>
+  <script src="./assets/startseite.js"></script>
 </body>
 </html>

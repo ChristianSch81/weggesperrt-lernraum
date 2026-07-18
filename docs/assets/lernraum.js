@@ -69,24 +69,24 @@
       profile: "Transfer leisten, diskursiv reflektieren und konstruktive Lösungen entwickeln. Du prüfst Perspektiven und Grenzen deines Urteils.",
       strategyLabel: "Denkhandlungen",
       operators: ["Transfer leisten", "Reflektieren"],
-      placeholder: "Strukturhilfe: These – Gegenposition – Abwägung – begründeter Transfer",
-      tip: "Skizziere zunächst These, Gegenperspektive und Abwägung. Ordne danach jedem Schritt einen Beleg oder Maßstab zu und prüfe die Grenzen deiner Deutung.",
-      hero: "Transfer leisten und Positionen reflektieren",
-      intro: "Du prüfst Deutungen, reflektierst konkurrierende Perspektiven und überträgst Erkenntnisse auf Fragen von Menschenwürde, Erinnerungskultur und demokratischem Handeln.",
+      placeholder: "Strukturhilfe: Deutungsthese – Merkmal – Beleg – Analyse – Entwicklung – Gesamtdeutung",
+      tip: "Formuliere zuerst eine Deutungsthese zur Figur. Verknüpfe dann jedes Merkmal mit einem genauen Romanbeleg und erkläre, wie Sprache, Verhalten, Beziehungen oder Erzählweise deine Deutung stützen.",
+      hero: "Figuren differenziert charakterisieren",
+      intro: "Du entwickelst eine anspruchsvolle Charakterisierung Anjas. Dabei untersuchst du direkte und indirekte Figurenmerkmale, Beziehungen, innere Konflikte, Entwicklung und erzählerische Gestaltung und reflektierst die Grenzen deiner Deutung.",
       goals: [
-        "Ich kann komplexe Schreib- und Transferaufträge eigenständig strukturieren und daraus ein Bearbeitungskonzept ableiten.",
-        "Ich kann Deutungen prüfen und alternative Lesarten argumentativ gegeneinander abwägen.",
-        "Ich kann Romanbelege, historische Quellen und ethische Maßstäbe methodisch transparent vernetzen.",
-        "Ich kann Perspektive und Wissensstand einer Figur einschließlich ihrer Leerstellen reflektieren.",
-        "Ich kann eine E-Mail adressatengerecht gestalten und ihre kommunikative Strategie begründen.",
-        "Ich kann einen Brief als figurennahe Handlung mit Subtext, Entwicklung und bewusster Leserwirkung gestalten.",
-        "Ich kann einen Tagebucheintrag mit ambivalenten Gefühlen und rückblickender Selbstdeutung gestalten.",
-        "Ich kann einen inneren Monolog sprachlich verdichten und einen offenen Entscheidungskonflikt sichtbar machen.",
-        "Ich kann historische und gegenwärtige Fragestellungen übertragen, ohne unterschiedliche Kontexte gleichzusetzen.",
-        "Ich kann meinen produktiven Text kriteriengeleitet reflektieren, überarbeiten und Gestaltungsentscheidungen begründen."
+        "Ich kann eine differenzierte Deutungsthese formulieren, die zentrale Eigenschaften, Konflikte und Entwicklungen einer Figur bündelt.",
+        "Ich kann direkte und indirekte Charakterisierung unterscheiden und ihre jeweilige Aussagekraft beurteilen.",
+        "Ich kann Verhalten, Sprache, Gedanken, Gefühle und Beziehungen als Belege für Figurenmerkmale analysieren.",
+        "Ich kann genaue Romanbelege in eine Argumentation einbinden und den Zusammenhang zwischen Beleg und Deutung erklären.",
+        "Ich kann Anjas Selbstbild mit den Fremdbildern anderer Figuren vergleichen und Widersprüche reflektieren.",
+        "Ich kann untersuchen, wie Erzählperspektive und Informationsvergabe die Wahrnehmung einer Figur lenken.",
+        "Ich kann Anjas Entwicklung an Wendepunkten nachvollziehen und Kontinuität sowie Veränderung gewichten.",
+        "Ich kann Beziehungen und Machtverhältnisse als Einflussfaktoren auf Anjas Handeln und Selbstverständnis deuten.",
+        "Ich kann alternative Lesarten einer Figur abwägen und die Grenzen meiner Charakterisierung transparent machen.",
+        "Ich kann eine schlüssig gegliederte Charakterisierung verfassen, kriteriengeleitet überarbeiten und ihre Gestaltungsentscheidungen begründen."
       ],
-      guidance: "Mache Voraussetzungen, Gegenpositionen und Grenzen deiner Aussage sichtbar.",
-      evidence: "Verknüpfe Roman, Sachquelle und begründeten Transfer; kennzeichne die Ebenen."
+      guidance: "Unterscheide Beobachtung, Beleg und Deutung und mache alternative Lesarten sichtbar.",
+      evidence: "Nutze mehrere genaue Romanbelege aus unterschiedlichen Situationen und erkläre jeweils ihre Aussagekraft."
     }
   };
 
@@ -107,13 +107,13 @@
           quick: { prompt: "Welcher Schreibplan bereitet einen produktiven Text am besten vor?", options: ["Nur die gewünschte Wortzahl notieren.", "Situation, Perspektive, Absicht, Romanwissen und Aufbau in Stichpunkten planen.", "Den fertigen Text zuerst abschreiben und danach gliedern."], answer: 1, explanation: "Ein hilfreicher Schreibplan klärt vor dem Formulieren Situation, Perspektive, Schreibabsicht, Romanwissen und Aufbau." }
         },
         experte: {
-          part: "Transfer · Planung",
-          title: "Komplexe Schreib- und Transferaufträge strukturieren",
-          focus: "Anspruchsvolle Schreib- und Transferaufträge in Teilfragen zerlegen, Perspektiven ordnen und ein tragfähiges Bearbeitungskonzept entwickeln.",
-          question: "Wie wird aus einer komplexen Aufgabenstellung ein schlüssiges und reflektiertes Bearbeitungskonzept?",
-          form: "Konzeptarbeit",
+          part: "Charakterisierung · Planung",
+          title: "Eine differenzierte Charakterisierung planen",
+          focus: "Eine Deutungsthese entwickeln, Beobachtungen bündeln und passende Belege für eine schlüssige Charakterisierung ordnen.",
+          question: "Wie wird aus einzelnen Beobachtungen ein begründetes Gesamtbild einer literarischen Figur?",
+          form: "Charakterisierungsplan",
           icon: "◇",
-          quick: { prompt: "Was gehört zu einem tragfähigen Bearbeitungskonzept für eine komplexe Transferaufgabe?", options: ["Nur eine spontane Meinung.", "These, Gegenperspektive, Belege, Maßstäbe, Abwägung und Grenzen.", "Möglichst viele unverbundene Einzelinformationen."], answer: 1, explanation: "Ein tragfähiges Konzept verbindet Positionen, Belege und Maßstäbe und macht auch Grenzen der Übertragung sichtbar." }
+          quick: { prompt: "Welche Planung führt zu einer analytischen Charakterisierung?", options: ["Eigenschaften ohne Belege sammeln.", "Deutungsthese, Merkmale, Situationen, Belege, Analyse und Entwicklung aufeinander beziehen.", "Die Handlung des Romans vollständig nacherzählen."], answer: 1, explanation: "Eine analytische Charakterisierung verbindet eine Deutungsthese mit ausgewählten Merkmalen, Belegen und deren genauer Auswertung." }
         }
       },
       tasks: {
@@ -126,8 +126,8 @@
           { tag: "Textentwurf", title: "Schreibplan in einen Text überführen", tip: "Wähle aus deinem Schreibplan die stärksten Punkte aus. Beginne mitten in Anjas Gedanken und verbinde Gefühl, Erinnerung und Konflikt, ohne die Handlung nur nachzuerzählen.", prompt: "Nutze deinen Schreibplan aus der vorherigen Aufgabe. Verfasse den Einstieg und einen ausgearbeiteten Hauptabschnitt des inneren Monologs. Prüfe anschließend mit der Checkliste, ob Text und Plan zusammenpassen.", min: 160, criteria: ["Mein Text setzt die Situation und Perspektive aus meinem Schreibplan erkennbar um.", "Ich gestalte Anjas Gedanken, Gefühle und inneren Konflikt figuren- und kapitelnah.", "Ich prüfe den Text anhand der Kriterien und überarbeite mindestens eine Stelle."] }
         ],
         experte: [
-          { tag: "Konzept", title: "Komplexen Transferauftrag strukturieren", tip: "Zerlege den Auftrag in Untersuchung, Gegenperspektive, historischen Maßstab und Transfer. Notiere zu jedem Teil nur Funktion und mögliche Belegart.", prompt: "Entwickle ein Bearbeitungskonzept zur Frage, wie Weggesperrt institutionelle Kontrolle darstellt und welche Kriterien daraus für menschenwürdige pädagogische Einrichtungen abgeleitet werden können. Plane These, Gegenperspektive, Roman- und Sachbelege, Maßstäbe sowie Grenzen des Transfers.", min: 190, criteria: ["Mein Konzept trennt Romananalyse, historischen Kontext und gegenwärtigen Transfer.", "Ich plane eine Gegenperspektive sowie geeignete Belege und Maßstäbe.", "Ich mache Grenzen und mögliche Verkürzungen des Transfers sichtbar."] },
-          { tag: "Reflexion", title: "Gestaltungsentscheidungen begründen", tip: "Wähle zwei Entscheidungen aus deinem Konzept, die die Wirkung besonders beeinflussen. Begründe jeweils Absicht, erwartete Wirkung und eine mögliche Grenze.", prompt: "Wähle zwei zentrale Entscheidungen aus deinem Bearbeitungskonzept. Begründe, wie sie Aufbau, Perspektivenvielfalt und Wirkung des späteren Produkts steuern, und reflektiere jeweils eine mögliche Grenze.", min: 210, criteria: ["Ich benenne zwei konkrete Entscheidungen aus meinem vorherigen Konzept.", "Ich begründe ihre Funktion und erwartete Wirkung nachvollziehbar.", "Ich reflektiere zu jeder Entscheidung eine Grenze oder Alternative."] }
+          { tag: "Konzept", title: "Charakterisierungsraster entwickeln", tip: "Ordne nicht nur Eigenschaftswörter. Plane zu jedem Merkmal eine Situation, einen Beleg, ein Analyseverb und eine mögliche Gegenbeobachtung.", prompt: "Entwickle ein Bearbeitungskonzept für eine differenzierte Charakterisierung Anjas. Plane eine Deutungsthese, mindestens vier Merkmalsbereiche, passende Romansituationen und Belege sowie eine Gegenbeobachtung, die dein Gesamtbild differenziert.", min: 190, criteria: ["Mein Konzept enthält eine prüfbare Deutungsthese und mindestens vier Merkmalsbereiche.", "Ich ordne jedem Bereich eine konkrete Romansituation und eine vorgesehene Analyse zu.", "Ich plane mindestens eine Gegenbeobachtung, die ein einseitiges Figurenbild verhindert."] },
+          { tag: "Reflexion", title: "Deutungsthese prüfen und schärfen", tip: "Prüfe, ob deine These alle gewählten Belege erklärt. Formuliere eine alternative Lesart und zeige, warum deine Fassung dennoch trägt oder angepasst werden muss.", prompt: "Prüfe deine Deutungsthese aus der vorherigen Aufgabe an zwei unterschiedlichen Romansituationen. Entwickle eine plausible alternative Lesart und formuliere anschließend eine geschärfte Gesamtthese zur Figur.", min: 210, criteria: ["Ich prüfe meine vorherige These an zwei unterschiedlichen Situationen.", "Ich formuliere und gewichte eine plausible alternative Lesart.", "Meine geschärfte Gesamtthese macht Eigenschaften, Konflikt oder Entwicklung sichtbar."] }
         ]
       }
     },
@@ -136,6 +136,7 @@
       focus: "Zwischen Schutz und Kontrolle unterscheiden und Leseerwartungen entwickeln.",
       question: "Wann wird staatliche Erziehung zu unrechtmäßiger Kontrolle?",
       quick: { prompt: "Welche Aussage ist als Lesevermutung am besten formuliert?", options: ["Anja hat bestimmt keine Freiheit.", "Ich vermute, dass Anjas Spielraum kleiner wird, weil andere über ihren Aufenthaltsort entscheiden; beim Lesen prüfe ich diese Annahme.", "In der DDR war alles Kontrolle."], answer: 1, explanation: "Die zweite Aussage kennzeichnet die Vermutung, begründet sie und bleibt überprüfbar." },
+      levelMeta: { experte: { part: "Charakterisierung · erste Figurenbilder", title: "Erster Eindruck und Deutungshypothese", focus: "Erste Figurenmerkmale aus Erzählerangaben, Verhalten und Beziehungen ableiten und als vorläufige Hypothese kennzeichnen.", question: "Wie entsteht ein erster Eindruck von Anja, und wodurch kann er sich im Verlauf der Lektüre verändern?", form: "Hypothesenwerkstatt", quick: { prompt: "Welche Aussage ist eine geeignete Deutungshypothese zu einer Figur?", options: ["Anja ist einfach schwierig.", "Anja wirkt anfangs abwehrend; ihr Verhalten könnte jedoch auch als Reaktion auf Unsicherheit und Fremdbestimmung lesbar sein.", "Anja bleibt im gesamten Roman unverändert."], answer: 1, explanation: "Die zweite Aussage formuliert einen textnahen Eindruck, markiert ihn als vorläufig und lässt eine alternative Erklärung zu." } } },
       tasks: {
         mindest: [
           { title: "Start-Statement", prompt: "Formuliere deine Vermutung zu Anjas Handlungsspielraum. Nutze: „Ich vermute …, weil …“", min: 35, criteria: ["Ich kennzeichne meine Aussage als Vermutung.", "Ich nenne einen nachvollziehbaren Grund."] },
@@ -146,8 +147,8 @@
           { title: "Kriterien entwickeln", prompt: "Formuliere drei Kriterien, mit denen du legitimen Schutz von unrechtmäßiger Kontrolle unterscheiden würdest.", min: 70, criteria: ["Ich nenne drei unterschiedliche Kriterien.", "Ich erläutere jedes Kriterium kurz.", "Ich beziehe Rechte oder Mitbestimmung ein."] }
         ],
         experte: [
-          { title: "Begriffe problematisieren", prompt: "Prüfe, warum dieselbe Maßnahme zugleich als Schutz und als Kontrolle gedeutet werden kann. Entwickle eine differenzierte Ausgangsthese.", min: 110, criteria: ["Ich berücksichtige mindestens zwei Perspektiven.", "Ich benenne ein Abwägungskriterium.", "Meine These vermeidet ein vorschnelles Schwarz-Weiß-Urteil."] },
-          { title: "Untersuchungsdesign", prompt: "Entwirf drei Leitfragen, mit denen du beim Lesen Macht, Zustimmung und Handlungsspielraum systematisch untersuchen kannst. Begründe die Auswahl.", min: 100, criteria: ["Meine Leitfragen erschließen verschiedene Dimensionen.", "Ich begründe ihre Bedeutung.", "Ich zeige, welche Textsignale ich beachten werde."] }
+          { title: "Ersten Eindruck differenzieren", prompt: "Formuliere auf Grundlage des Romananfangs eine vorläufige Charakterisierung Anjas. Unterscheide mindestens eine Erzählerangabe, eine Verhaltensbeobachtung und eine Deutung; formuliere außerdem eine alternative Erklärung.", min: 150, criteria: ["Ich unterscheide Erzählerangabe, beobachtbares Verhalten und eigene Deutung.", "Ich entwickle aus den Beobachtungen eine vorläufige Deutungshypothese.", "Ich nenne eine plausible alternative Erklärung und kennzeichne den vorläufigen Charakter meines Urteils."] },
+          { title: "Beobachtungsfragen für die Lektüre", prompt: "Entwickle vier Leitfragen, mit denen du Anjas Sprache, Verhalten, Gedanken, Beziehungen und Veränderungen im Roman systematisch verfolgen kannst. Begründe, wie jede Frage zur späteren Charakterisierung beiträgt.", min: 150, criteria: ["Meine vier Leitfragen decken unterschiedliche Zugänge zur Figur ab.", "Ich benenne zu jeder Frage passende Textsignale oder Belegarten.", "Ich erkläre den Beitrag jeder Frage zu einer differenzierten Charakterisierung."] }
         ]
       }
     },
@@ -156,6 +157,7 @@
       focus: "Wendepunkte, Ursachen und Folgen von Anjas zunehmendem Kontrollverlust erfassen.",
       question: "Wie erzeugt der Roman das Gefühl, dass Anja die Kontrolle über ihr Leben verliert?",
       quick: { prompt: "Was macht eine Ereigniskette analytisch?", options: ["Sie zählt möglichst viele Ereignisse auf.", "Sie verbindet ausgewählte Ereignisse durch Ursache und Folge.", "Sie nennt nur die Seitenzahlen."], answer: 1, explanation: "Eine analytische Ereigniskette macht den Zusammenhang zwischen ausgewählten Handlungsschritten sichtbar." },
+      levelMeta: { experte: { part: "Charakterisierung · Entwicklung", title: "Anjas Entwicklung an Wendepunkten", focus: "Veränderungen und bleibende Eigenschaften an ausgewählten Wendepunkten untersuchen und gewichten.", question: "Was verändert Anja – und welche Grundzüge bleiben trotz neuer Erfahrungen bestehen?", form: "Entwicklungslinie", quick: { prompt: "Wann belegt eine Szene eine Figurenentwicklung?", options: ["Sobald die Figur an einem neuen Ort ist.", "Wenn früheres und späteres Verhalten unter vergleichbaren Bedingungen analysiert und die Veränderung erklärt wird.", "Wenn die Handlung kurz zusammengefasst wird."], answer: 1, explanation: "Entwicklung wird durch einen begründeten Vergleich von Verhalten, Motiven oder Selbstbild zu unterschiedlichen Zeitpunkten sichtbar." } } },
       tasks: {
         mindest: [
           { title: "Handlung sichern", prompt: "Gib vier wichtige Stationen von Anjas Weg bis zum Heim in der richtigen Reihenfolge und im Präsens wieder.", min: 70, criteria: ["Ich nenne vier Stationen.", "Die Reihenfolge stimmt.", "Ich schreibe im Präsens."] },
@@ -166,8 +168,8 @@
           { title: "Erzählwirkung", prompt: "Untersuche an einer Passage, wie Perspektive, Informationsvergabe oder Tempo Anjas Kontrollverlust für Lesende erfahrbar machen.", min: 130, criteria: ["Ich benenne ein Gestaltungsmittel.", "Ich belege meine Beobachtung.", "Ich erkläre die Wirkung auf Lesende."] }
         ],
         experte: [
-          { title: "Kontrollverlust als Konstruktion", prompt: "Entwickle eine Deutung, wie individuelle Entscheidungen, familiäre Konflikte und staatliche Strukturen in Anjas Weg zusammenwirken. Gewichte die Faktoren.", min: 180, criteria: ["Ich unterscheide drei Einflussbereiche.", "Ich zeige Wechselwirkungen.", "Ich begründe meine Gewichtung mit Belegen."] },
-          { title: "Alternative Lesart", prompt: "Formuliere und prüfe eine Gegenlesart zur These des vollständigen Kontrollverlusts: Wo bewahrt oder gewinnt Anja Handlungsmacht?", min: 160, criteria: ["Ich formuliere eine Gegenposition.", "Ich nutze mindestens zwei Belege.", "Ich ziehe ein abgewogenes Fazit."] }
+          { title: "Entwicklungslinie mit Wendepunkten", prompt: "Wähle drei Wendepunkte aus Anjas Weg. Analysiere für jeden Punkt Ausgangslage, Verhalten, inneren Konflikt und mögliche Veränderung. Formuliere danach eine These zu ihrer Entwicklung.", min: 200, criteria: ["Ich untersuche drei konkrete Wendepunkte mit genauen Romanbezügen.", "Ich erkläre jeweils den Zusammenhang von Situation, Verhalten und innerem Konflikt.", "Meine Entwicklungsthese unterscheidet Veränderung und bleibende Eigenschaften."] },
+          { title: "Kontinuität oder Wandel abwägen", prompt: "Prüfe die These: „Anja wird durch ihre Erfahrungen zu einem grundlegend anderen Menschen.“ Entwickle eine Gegenposition und wäge anhand von mindestens drei Belegen ab.", min: 190, criteria: ["Ich prüfe die These und eine ernst zu nehmende Gegenposition.", "Ich nutze mindestens drei Belege aus verschiedenen Romanabschnitten.", "Mein Fazit gewichtet Kontinuität und Wandel differenziert."] }
         ]
       }
     },
@@ -176,6 +178,7 @@
       focus: "Räume, Regeln, Sanktionen und soziales Miteinander vergleichend untersuchen.",
       question: "Wie werden Räume zu Instrumenten der Macht?",
       quick: { prompt: "Welche Formulierung trennt Beobachtung und Deutung?", options: ["Die verschlossene Tür ist schlimm.", "Die Tür ist verschlossen (Beobachtung); sie kann Anjas Abhängigkeit symbolisieren (Deutung).", "Die Tür bedeutet Gefängnis, das ist sicher."], answer: 1, explanation: "Die zweite Formulierung kennzeichnet Textbeobachtung und mögliche Deutung transparent." },
+      levelMeta: { experte: { part: "Charakterisierung · Raum und Situation", title: "Wie Situationen Anjas Verhalten prägen", focus: "Anjas Verhalten in unterschiedlichen Räumen vergleichen und zwischen situationsbedingter Reaktion und stabiler Eigenschaft unterscheiden.", question: "Was verrät Anjas Verhalten über ihren Charakter – und was vor allem über die jeweilige Situation?", form: "Kontextvergleich", quick: { prompt: "Welche Schlussfolgerung ist bei einer Charakterisierung methodisch vorsichtig?", options: ["Wer einmal schweigt, ist grundsätzlich schüchtern.", "Anjas Schweigen kann in dieser Situation Angst, Widerstand oder strategische Selbstkontrolle ausdrücken; der Kontext entscheidet.", "Verhalten zeigt immer eindeutig eine feste Eigenschaft."], answer: 1, explanation: "Verhalten muss im situativen Kontext analysiert werden; erst mehrere Belege erlauben Aussagen über stabilere Figurenmerkmale." } } },
       tasks: {
         mindest: [
           { title: "Orte beschreiben", prompt: "Beschreibe Durchgangsheim und Jugendwerkhof mit je drei Merkmalen aus dem Roman.", min: 80, criteria: ["Ich nenne für jeden Ort drei Merkmale.", "Ich trenne die beiden Orte klar.", "Ich nutze mindestens eine Seitenangabe."] },
@@ -186,8 +189,8 @@
           { title: "Raum und Macht", prompt: "Analysiere, wie ein konkreter Raum Machtverhältnisse sichtbar macht und Anjas Verhalten beeinflusst.", min: 130, criteria: ["Ich beschreibe den Raum präzise.", "Ich deute mindestens zwei Details.", "Ich erkläre die Wirkung auf Anjas Verhalten."] }
         ],
         experte: [
-          { title: "Institutionelle Logik", prompt: "Rekonstruiere, welche institutionelle Logik hinter Raumordnung, Zeitregime und Sanktionen erkennbar wird. Prüfe, wo der Roman diese Logik bricht oder irritiert.", min: 190, criteria: ["Ich verknüpfe Raum, Zeit und Sanktion.", "Ich formuliere eine übergreifende Deutung.", "Ich prüfe eine Irritation oder Grenze meiner Deutung."] },
-          { title: "Transfer: Architektur und Würde", prompt: "Entwickle Kriterien für eine menschenwürdige pädagogische Einrichtung und kontrastiere sie mit den dargestellten Räumen.", min: 170, criteria: ["Ich entwickle mindestens vier Kriterien.", "Ich begründe sie normativ.", "Ich führe den Vergleich textbezogen durch."] }
+          { title: "Verhalten im Kontext vergleichen", prompt: "Vergleiche Anjas Verhalten in zwei deutlich verschiedenen Räumen oder institutionellen Situationen. Prüfe, welche Reaktionen situationsbedingt sind und welche auf stabilere Eigenschaften hindeuten.", min: 190, criteria: ["Ich analysiere zwei unterschiedliche Situationen mit genauen Belegen.", "Ich unterscheide situationsbedingte Reaktionen und stabilere Figurenmerkmale.", "Ich begründe meine Einordnung und benenne eine Unsicherheit."] },
+          { title: "Räume als Charakterisierungsfolie", prompt: "Untersuche, wie die Darstellung eines Raumes Anjas inneren Zustand, ihr Selbstbild oder ihre Handlungsmöglichkeiten spiegelt oder kontrastiert. Entwickle auch eine alternative Deutung.", min: 180, criteria: ["Ich deute mindestens zwei konkrete Raumdetails.", "Ich verbinde die Raumgestaltung nachvollziehbar mit Anjas Figur.", "Ich prüfe eine alternative Lesart statt die Symbolik als eindeutig auszugeben."] }
         ]
       }
     },
@@ -196,6 +199,7 @@
       focus: "Befehle, Wortwahl, Satzbau und Sprechsituationen in ihrer Wirkung analysieren.",
       question: "Wie kann Sprache Gehorsam erzwingen und Menschen entwürdigen?",
       quick: { prompt: "Welche Beobachtung gehört zur Sprachanalyse?", options: ["Der Direktor ist böse.", "Kurze Imperativsätze lassen keinen sprachlichen Raum für Widerspruch.", "Anja sollte weglaufen."], answer: 1, explanation: "Die zweite Aussage benennt ein sprachliches Mittel und seine mögliche Wirkung." },
+      levelMeta: { experte: { part: "Charakterisierung · Sprache", title: "Anjas Sprache und ihr innerer Konflikt", focus: "Wortwahl, Satzbau, Schweigen und Gegenrede als indirekte Mittel der Charakterisierung analysieren.", question: "Wie zeigt Anjas Sprache, was sie denkt, fühlt, verbirgt oder gegenüber anderen behaupten will?", form: "Figurensprachanalyse", quick: { prompt: "Was macht Sprache zu einem indirekten Charakterisierungsmittel?", options: ["Jede Äußerung nennt eine Eigenschaft ausdrücklich.", "Wortwahl, Satzbau und Sprechverhalten lassen Rückschlüsse auf Haltung, Gefühle und Beziehungen zu.", "Nur der Inhalt einer Aussage ist wichtig."], answer: 1, explanation: "Figurensprache charakterisiert indirekt, weil Form, Situation und Adressat ebenso aussagekräftig sein können wie der Inhalt." } } },
       tasks: {
         mindest: [
           { title: "Befehle sammeln", prompt: "Notiere vier Befehle aus Anjas erstem Tag in Torgau und ordne ihnen eine Wirkung zu.", min: 70, criteria: ["Ich notiere vier Befehle oder genaue Paraphrasen.", "Ich ordne jedem Beispiel eine Wirkung zu.", "Ich nenne Seitenangaben."] },
@@ -206,8 +210,8 @@
           { title: "Machtkommunikation", prompt: "Analysiere, wie die Rollen von Sprechenden und Angesprochenen sprachlich festgelegt werden. Beziehe mögliche Reaktionen ein.", min: 130, criteria: ["Ich beschreibe die asymmetrische Sprechsituation.", "Ich nutze Textbelege.", "Ich erkläre Folgen für Handlungsmöglichkeiten."] }
         ],
         experte: [
-          { title: "Sprache, Körper, Institution", prompt: "Deute das Zusammenspiel von Sprache, körperlicher Disziplinierung und institutionellem Raum. Zeige, wie Macht dadurch normalisiert wird.", min: 190, criteria: ["Ich verknüpfe drei Analyseebenen.", "Ich erläutere den Begriff Normalisierung am Text.", "Ich reflektiere eine alternative Deutung."] },
-          { title: "Gegenrede gestalten", prompt: "Entwickle eine kurze Gegenrede aus Anjas Perspektive und kommentiere anschließend, welche sprachlichen Entscheidungen Würde und Handlungsmacht zurückgeben.", min: 170, criteria: ["Meine Gegenrede bleibt figuren- und situationsnah.", "Mein Kommentar analysiert eigene sprachliche Mittel.", "Ich reflektiere das Risiko der Gegenrede."] }
+          { title: "Figurensprache im Vergleich", prompt: "Analysiere Anjas Sprache in zwei unterschiedlichen Gesprächssituationen. Untersuche Wortwahl, Satzbau, Sprechanteile, Schweigen und Adressatenbezug und leite daraus ein differenziertes Figurenmerkmal ab.", min: 200, criteria: ["Ich untersuche zwei unterschiedliche Gesprächssituationen mit genauen Belegen.", "Ich analysiere mindestens drei sprachliche oder kommunikative Merkmale.", "Ich erkläre, wie Situation und Adressat Anjas sprachliches Verhalten beeinflussen."] },
+          { title: "Subtext und Selbstschutz", prompt: "Wähle eine Szene, in der Anjas gesprochene Worte und ihre möglichen Gedanken oder Gefühle auseinanderfallen. Deute den Subtext und prüfe mindestens zwei Erklärungen für ihr Sprechverhalten.", min: 180, criteria: ["Ich belege die Spannung zwischen Gesagtem und möglichem innerem Erleben.", "Ich entwickle mindestens zwei plausible Erklärungen.", "Ich gewichte die Erklärungen textnah und vermeide eine eindeutige Gedankenbehauptung ohne Beleg."] }
         ]
       }
     },
@@ -216,6 +220,7 @@
       focus: "Romanbeleg, historische Quelle und persönliche Wertung unterscheiden und verbinden.",
       question: "Was kann ein Roman über Geschichte zeigen – und was nicht?",
       quick: { prompt: "Welche Aussage ist methodisch sauber?", options: ["Der Roman beweist genau, wie es in jedem Jugendwerkhof war.", "Der Roman gestaltet eine mögliche Erfahrung; historische Aussagen prüfe ich zusätzlich an Quellen.", "Historische Quellen sind immer neutral."], answer: 1, explanation: "Literarische Gestaltung und historische Sachinformation müssen unterschieden und transparent verknüpft werden." },
+      levelMeta: { experte: { part: "Charakterisierung · Selbst- und Fremdbild", title: "Wer ist Anja – in wessen Augen?", focus: "Anjas Selbstbild mit Fremdzuschreibungen vergleichen und Interessen, Machtpositionen sowie Leerstellen der Wahrnehmung reflektieren.", question: "Wie verändert sich unser Bild von Anja, wenn unterschiedliche Figuren sie beschreiben oder beurteilen?", form: "Perspektivenmatrix", quick: { prompt: "Wie sollte eine Fremdzuschreibung in einer Charakterisierung verwendet werden?", options: ["Als objektive Wahrheit über die Figur.", "Als perspektivische Aussage, deren Sprecher, Situation, Interesse und Textbelege geprüft werden.", "Sie sollte grundsätzlich ignoriert werden."], answer: 1, explanation: "Fremdbilder liefern wichtige Hinweise, sind aber perspektivisch und müssen mit Verhalten, Selbstbild und Erzählkontext verglichen werden." } } },
       tasks: {
         mindest: [
           { title: "Aussagen zuordnen", prompt: "Formuliere je ein Beispiel für Romanbeleg, historische Information und persönliche Wertung. Kennzeichne die drei Kategorien.", min: 65, criteria: ["Ich formuliere drei Beispiele.", "Ich kennzeichne jede Kategorie richtig."] },
@@ -226,8 +231,8 @@
           { title: "Belegtes Urteil", prompt: "Formuliere ein Urteil über die historische Plausibilität der Szene und nutze mindestens zwei verschiedene Belegarten transparent.", min: 130, criteria: ["Ich formuliere ein klares Urteil.", "Ich nutze Roman und Sachquelle.", "Ich kennzeichne Grenzen meiner Aussage."] }
         ],
         experte: [
-          { title: "Erkenntnisgrenzen", prompt: "Diskutiere, welche besondere Erkenntnis Literatur gegenüber Sachquellen ermöglichen kann und wo die Gefahr der Verallgemeinerung liegt.", min: 200, criteria: ["Ich entwickle Chancen und Grenzen.", "Ich nutze konkrete Beispiele.", "Ich unterscheide emotionale Plausibilität und historische Belegbarkeit."] },
-          { title: "Multiperspektivischer Quellenkommentar", prompt: "Verfasse einen Quellenkommentar, der Roman, institutionelle Information und Betroffenenperspektive zueinander in Beziehung setzt.", min: 190, criteria: ["Ich berücksichtige drei Perspektiven.", "Ich prüfe Interessen und Reichweite.", "Ich komme zu einer eigenständigen Synthese."] }
+          { title: "Selbstbild und Fremdbilder vergleichen", prompt: "Vergleiche Anjas Selbstbild mit zwei unterschiedlichen Fremdbildern anderer Figuren oder Institutionen. Untersuche Zuschreibungen, Interessen, Machtpositionen und Widersprüche.", min: 210, criteria: ["Ich untersuche Anjas Selbstbild und zwei unterschiedliche Fremdbilder.", "Ich belege die Zuschreibungen und ordne Sprecher, Situation und mögliche Interessen ein.", "Ich erkläre, welche Widersprüche für meine Charakterisierung besonders aussagekräftig sind."] },
+          { title: "Perspektivische Wahrheit reflektieren", prompt: "Prüfe, ob eine ausgewählte Fremdzuschreibung Anja angemessen beschreibt oder sie auf eine Rolle reduziert. Formuliere ein differenziertes Gegenbild und benenne auch dessen Grenzen.", min: 190, criteria: ["Ich prüfe eine konkrete Fremdzuschreibung anhand mehrerer Romanbelege.", "Mein Gegenbild berücksichtigt widersprüchliche Eigenschaften oder Verhaltensweisen.", "Ich benenne die Perspektivität und Grenzen auch meiner eigenen Deutung."] }
         ]
       }
     },
@@ -236,6 +241,7 @@
       focus: "Vorwürfe rekonstruieren und Behandlung anhand ethischer und rechtsstaatlicher Maßstäbe beurteilen.",
       question: "Wer trägt Verantwortung, wenn ein System Unrecht als Erziehung bezeichnet?",
       quick: { prompt: "Was gehört zu einem begründeten Urteil?", options: ["Nur eine starke Meinung.", "Maßstab, Belege, Abwägung und Schlussfolgerung.", "Möglichst viele Fachwörter."], answer: 1, explanation: "Ein Urteil wird nachvollziehbar, wenn Maßstab, Belege, Abwägung und Schlussfolgerung zusammenwirken." },
+      levelMeta: { experte: { part: "Charakterisierung · innere Konflikte", title: "Werte, Motive und innere Widersprüche", focus: "Anjas Entscheidungen aus konkurrierenden Motiven, Wertvorstellungen und Gefühlen erklären, ohne sie auf ein Merkmal zu reduzieren.", question: "Welche inneren Spannungen treiben Anja an, und wie prägen sie ihr Handeln?", form: "Motiv- und Konfliktanalyse", quick: { prompt: "Was kennzeichnet einen inneren Konflikt einer Figur?", options: ["Die Figur besitzt nur eine klare Absicht.", "Mehrere Bedürfnisse, Werte oder Ziele ziehen die Figur in unterschiedliche Richtungen.", "Zwei Figuren streiten miteinander."], answer: 1, explanation: "Ein innerer Konflikt entsteht, wenn in einer Figur konkurrierende Motive, Werte oder Ziele wirksam sind." } } },
       tasks: {
         mindest: [
           { title: "Vorwurf und Gegenargument", prompt: "Gib zwei Vorwürfe des Direktors und je ein mögliches Gegenargument Anjas wieder.", min: 75, criteria: ["Ich nenne zwei Vorwürfe.", "Ich formuliere zwei passende Gegenargumente.", "Ich bleibe bei der Szene."] },
@@ -246,8 +252,8 @@
           { title: "Einwand und Entkräftung", prompt: "Formuliere den stärksten möglichen Einwand gegen dein Urteil und entkräfte oder begrenze ihn sachlich.", min: 110, criteria: ["Der Einwand ist ernst zu nehmen.", "Meine Antwort nutzt einen Maßstab oder Beleg.", "Ich vermeide ein bloßes Wiederholen."] }
         ],
         experte: [
-          { title: "Verantwortungsmodell", prompt: "Entwickle ein Modell geteilter Verantwortung zwischen handelnden Personen, Institution und politischem System. Begründe Gewichtungen und mögliche Entlastungsgründe.", min: 210, criteria: ["Ich unterscheide drei Verantwortungsebenen.", "Ich begründe Gewichtungen.", "Ich diskutiere Handlungsspielräume und Entlastungsgründe."] },
-          { title: "Historisches Urteil reflektieren", prompt: "Untersuche, wie heutige Menschenrechtsmaßstäbe auf historisches Handeln angewendet werden können, ohne den historischen Kontext als Entschuldigung zu benutzen.", min: 190, criteria: ["Ich unterscheide Erklärung und Rechtfertigung.", "Ich reflektiere Gegenwartsmaßstäbe.", "Ich ziehe ein differenziertes Urteil."] }
+          { title: "Motivbündel statt Einzelerklärung", prompt: "Analysiere eine folgenreiche Entscheidung Anjas. Rekonstruiere mindestens drei mögliche Motive oder Werte, zeige ihre Spannungen und gewichte ihre Bedeutung für die Entscheidung.", min: 210, criteria: ["Ich untersuche eine konkrete Entscheidung und mindestens drei plausible Motive oder Werte.", "Ich erkläre Spannungen und Wechselwirkungen zwischen den Motiven.", "Ich gewichte meine Deutung anhand genauer Belege und kennzeichne Unsicherheiten."] },
+          { title: "Widersprüchlichkeit als Figurenmerkmal", prompt: "Prüfe, ob zwei scheinbar widersprüchliche Verhaltensweisen Anjas tatsächlich unvereinbar sind. Entwickle eine übergeordnete Deutung, die beide Seiten erklärt, und formuliere eine Grenze dieser Deutung.", min: 190, criteria: ["Ich belege zwei scheinbar widersprüchliche Verhaltensweisen.", "Meine übergeordnete Deutung erklärt beide Beobachtungen nachvollziehbar.", "Ich benenne eine Grenze oder alternative Erklärung."] }
         ]
       }
     },
@@ -256,6 +262,7 @@
       focus: "Anjas und Toms Positionen vergleichen und demokratisches Handeln abwägen.",
       question: "Wann ist persönliches Risiko für politische Veränderung vertretbar?",
       quick: { prompt: "Was macht ein Dilemma aus?", options: ["Eine Seite ist eindeutig richtig.", "Zwei wichtige Werte geraten in Konflikt und jede Entscheidung hat Kosten.", "Niemand weiß, worum es geht."], answer: 1, explanation: "Im Dilemma kollidieren begründbare Werte; eine Entscheidung löst den Konflikt nicht folgenlos auf." },
+      levelMeta: { experte: { part: "Charakterisierung · Beziehungen", title: "Anja in Beziehungen charakterisieren", focus: "Beziehungen als wechselseitige Prozesse untersuchen und ihre Bedeutung für Anjas Selbstbild, Entscheidungen und Entwicklung deuten.", question: "Was zeigen Anjas Beziehungen über sie – und wie verändern andere Figuren ihre Handlungsmöglichkeiten?", form: "Beziehungsanalyse", quick: { prompt: "Welche Aussage analysiert eine Figurenbeziehung?", options: ["Anja und Tom kennen sich.", "Zwischen Anja und Tom treffen Nähebedürfnis und unterschiedliche Vorstellungen von Sicherheit aufeinander; dies beeinflusst beide Figuren.", "Tom ist nur eine Nebenfigur."], answer: 1, explanation: "Eine Beziehungsanalyse untersucht Erwartungen, Konflikte, Macht, Nähe und wechselseitige Einflüsse." } } },
       tasks: {
         mindest: [
           { title: "Argumente sammeln", prompt: "Nenne je zwei Argumente von Anja und Tom aus ihrem Streit. Ordne sie den Werten Sicherheit oder Engagement zu.", min: 80, criteria: ["Ich nenne vier Argumente.", "Ich ordne die Werte passend zu.", "Ich beziehe mich auf die Szene."] },
@@ -266,21 +273,23 @@
           { title: "Positionspapier", prompt: "Verfasse ein abgewogenes Positionspapier mit These, zwei Argumenten, Gegenargument und begründetem Schluss.", min: 170, criteria: ["Mein Text folgt der geforderten Struktur.", "Ich nutze Romanbelege.", "Mein Schluss wägt individuelles und kollektives Handeln ab."] }
         ],
         experte: [
-          { title: "Dilemma transformieren", prompt: "Prüfe, ob die Alternative Engagement oder Sicherheit zu eng formuliert ist. Entwickle eine dritte Handlungsoption und bewerte ihre Realisierbarkeit im historischen Kontext.", min: 200, criteria: ["Ich kritisiere die Ausgangsalternative begründet.", "Ich entwickle eine konkrete dritte Option.", "Ich prüfe Chancen, Risiken und historische Grenzen."] },
-          { title: "Transfer in die Demokratie", prompt: "Leite aus der Szene Kriterien für verantwortliches zivilgesellschaftliches Handeln heute ab, ohne die historischen Situationen gleichzusetzen.", min: 190, criteria: ["Ich formuliere mindestens vier Kriterien.", "Ich markiere Unterschiede zwischen damals und heute.", "Ich begründe meinen Transfer."] }
+          { title: "Beziehungsdynamik analysieren", prompt: "Untersuche Anjas Beziehung zu Tom oder einer anderen zentralen Figur an drei Schlüsselszenen. Analysiere Erwartungen, Nähe, Konflikt, Macht und wechselseitige Veränderung.", min: 220, criteria: ["Ich analysiere drei Schlüsselszenen in einer nachvollziehbaren Entwicklungslinie.", "Ich untersuche mindestens drei Beziehungsdimensionen wie Nähe, Erwartung, Konflikt oder Macht.", "Ich erkläre, wie beide Figuren die Beziehung und einander beeinflussen."] },
+          { title: "Beziehung als Spiegel und Gegenkraft", prompt: "Prüfe, inwiefern die gewählte Beziehung Anjas Eigenschaften sichtbar macht, verstärkt oder verändert. Formuliere eine Gegenlesart und ein abgewogenes Fazit für deine Charakterisierung.", min: 190, criteria: ["Ich unterscheide Spiegelung, Verstärkung und mögliche Veränderung der Figur.", "Ich entwickle eine plausible Gegenlesart mit Textbezug.", "Mein Fazit bindet die Beziehungsanalyse an eine differenzierte Gesamtdeutung Anjas zurück."] }
         ]
       }
     },
     {
       id: "werkstatt", part: "Abschluss · produktives Schreiben", title: "Brief, E-Mail, Tagebuch und innerer Monolog", time: "4 × 45 Min.", form: "Interaktive Schreibwerkstatt", icon: "✎", workshop: true,
       focus: "Vier produktive Schreibformen planen, figuren- und kapiteltreu verfassen und kriteriengeleitet überarbeiten.",
-      question: "Wie wird aus Romanwissen ein glaubwürdiger Text aus Anjas Perspektive?"
+      question: "Wie wird aus Romanwissen ein glaubwürdiger Text aus Anjas Perspektive?",
+      levelMeta: { experte: { part: "Charakterisierung · Perspektivprobe", title: "Figurennähe durch produktives Schreiben prüfen", focus: "Produktive Texte als Hypothesen über Anjas Innenleben gestalten und anschließend ihre Textnähe sowie Grenzen reflektieren.", question: "Welche produktiven Entscheidungen machen Anjas Charakter sichtbar, ohne ihr unbelegte Gedanken zuzuschreiben?", form: "Figurennahe Schreibwerkstatt" } }
     },
     {
       id: "abschluss", part: "Abschluss · Transfer und Reflexion", title: "Erinnern, urteilen, weiterfragen", time: "2–3 × 45 Min.", form: "Portfolio-Werkstatt", icon: "★",
       focus: "Roman, Sachquelle und eigenes Urteil in einem adressatengerechten Produkt verbinden.",
       question: "Wie kann die Geschichte Anjas heute verantwortungsvoll weitererzählt werden?",
       quick: { prompt: "Was erhöht die Glaubwürdigkeit eines Abschlussprodukts?", options: ["Roman, Quelle und eigenes Urteil werden kenntlich gemacht.", "Alle Aussagen klingen möglichst dramatisch.", "Quellen werden nicht genannt, damit der Text flüssig bleibt."], answer: 0, explanation: "Transparenz über Romanbeleg, Sachquelle und eigene Wertung macht das Produkt nachvollziehbar und überprüfbar." },
+      levelMeta: { experte: { part: "Charakterisierung · Synthese", title: "Eine vollständige Charakterisierung verfassen", focus: "Deutungsthese, Figurenmerkmale, Entwicklung, Beziehungen, Erzählgestaltung und Gegenlesart zu einem schlüssigen Gesamttext verbinden.", question: "Wie entsteht eine Charakterisierung, die Anjas Widersprüchlichkeit und Entwicklung textnah erklärt?", form: "Schreibkonferenz", quick: { prompt: "Was gehört in den Hauptteil einer analytischen Charakterisierung?", options: ["Eine chronologische Nacherzählung des gesamten Romans.", "Geordnete Merkmalsbereiche mit Belegen, Analyse, Entwicklung und Rückbindung an die Deutungsthese.", "Eine Liste möglichst vieler Eigenschaftswörter."], answer: 1, explanation: "Der Hauptteil ordnet Merkmale argumentativ und erklärt anhand von Belegen, wie das Figurenbild und seine Entwicklung entstehen." } } },
       tasks: {
         mindest: [
           { title: "Produkt planen", prompt: "Wähle Infoseite, Schülerzeitungsartikel, Podcast-Skript oder Ausstellungstafel. Notiere Zielgruppe, Kernaussage und drei Inhalte.", min: 85, criteria: ["Ich benenne Produkt und Zielgruppe.", "Ich formuliere eine Kernaussage.", "Ich plane drei passende Inhalte."] },
@@ -291,8 +300,8 @@
           { title: "Reflexion und Überarbeitung", prompt: "Formuliere Kriterien für Peer-Feedback und erläutere anschließend, welche Änderung dein Produkt inhaltlich oder sprachlich verbessert.", min: 120, criteria: ["Ich entwickle konkrete Feedbackkriterien.", "Ich begründe eine Überarbeitung.", "Ich reflektiere Wirkung auf die Zielgruppe."] }
         ],
         experte: [
-          { title: "Kuratorisches Konzept", prompt: "Entwickle ein kuratorisches Konzept für eine digitale Ausstellung oder einen Podcast: Welche Stimmen werden hörbar, welche Leerstellen bleiben und wie vermeidest du eine vereinnahmende Darstellung?", min: 220, criteria: ["Ich treffe begründete Auswahlentscheidungen.", "Ich reflektiere Stimmen und Leerstellen.", "Ich entwickle Regeln für verantwortungsvolle Darstellung."] },
-          { title: "Metareflexion", prompt: "Prüfe, wie der Roman dein historisches und ethisches Urteil beeinflusst hat. Unterscheide emotionale Wirkung, Wissenserwerb und begründeten Transfer.", min: 190, criteria: ["Ich unterscheide drei Reflexionsebenen.", "Ich belege Veränderungen meines Urteils.", "Ich formuliere eine weiterführende Forschungsfrage."] }
+          { title: "Charakterisierung ausformulieren", prompt: "Verfasse eine zusammenhängende Charakterisierung Anjas. Entwickle eine Deutungsthese und untersuche mindestens vier Merkmalsbereiche, ihre Entwicklung, eine zentrale Beziehung sowie die Wirkung der Erzählperspektive. Nutze genaue Romanbelege.", min: 450, criteria: ["Meine Einleitung ordnet Figur und Roman knapp ein und formuliert eine differenzierte Deutungsthese.", "Mein Hauptteil analysiert mindestens vier sinnvoll geordnete Merkmalsbereiche, Entwicklung, Beziehung und Erzählperspektive mit genauen Belegen.", "Mein Schluss bündelt die Gesamtdeutung, berücksichtigt eine Gegenlesart und benennt eine Grenze der Charakterisierung."] },
+          { title: "Kriteriengeleitet überarbeiten und reflektieren", prompt: "Überarbeite deine Charakterisierung aus der vorherigen Aufgabe. Dokumentiere mindestens drei konkrete Änderungen und begründe, wie sie Deutung, Belegführung, Aufbau oder sprachliche Präzision verbessern.", min: 220, criteria: ["Ich dokumentiere mindestens drei konkrete Vorher-nachher-Änderungen aus meinem Text.", "Ich begründe die Wirkung jeder Änderung auf Deutung, Belege, Aufbau oder Sprache.", "Ich reflektiere eine verbleibende Unsicherheit oder alternative Lesart meiner Charakterisierung."] }
         ]
       }
     }
@@ -349,11 +358,11 @@
   };
 
   const PROGRESS_GROUPS = [
-    { title: "Operatoren & Einstieg", titles: { regel: "Schreibplanung & Einstieg", experte: "Konzept & Einstieg" }, range: "Stationen 1–2", ids: ["operatoren", "einstieg"] },
-    { title: "Handlung & Räume", range: "Stationen 3–4", ids: ["weg", "raeume"] },
-    { title: "Sprache & Geschichte", range: "Stationen 5–6", ids: ["sprache", "quellen"] },
-    { title: "Würde & Dilemma", range: "Stationen 7–8", ids: ["wuerde", "dilemma"] },
-    { title: "Schreiben & Transfer", range: "Stationen 9–10", ids: ["werkstatt", "abschluss"] }
+    { title: "Operatoren & Einstieg", titles: { regel: "Schreibplanung & Einstieg", experte: "Deutungsthese & Figurenbild" }, range: "Stationen 1–2", ids: ["operatoren", "einstieg"] },
+    { title: "Handlung & Räume", titles: { experte: "Entwicklung & Einflussräume" }, range: "Stationen 3–4", ids: ["weg", "raeume"] },
+    { title: "Sprache & Geschichte", titles: { experte: "Sprache & Fremdbilder" }, range: "Stationen 5–6", ids: ["sprache", "quellen"] },
+    { title: "Würde & Dilemma", titles: { experte: "Konflikte & Beziehungen" }, range: "Stationen 7–8", ids: ["wuerde", "dilemma"] },
+    { title: "Schreiben & Transfer", titles: { experte: "Charakterisierung & Reflexion" }, range: "Stationen 9–10", ids: ["werkstatt", "abschluss"] }
   ];
 
   const params = new URLSearchParams(location.search);
@@ -420,8 +429,36 @@
     if (module.workshop) return WRITING_FORM_ORDER.map(formId => taskKey(module.id, `workshop_${formId}`));
     const keys = module.tasks[levelId].map((_, index) => taskKey(module.id, index));
     keys.push(taskKey(module.id, "quiz"));
-    if (module.spectrum) keys.push(taskKey(module.id, "spectrum"));
+    if (module.spectrum && levelId !== "experte") keys.push(taskKey(module.id, "spectrum"));
     return keys;
+  }
+
+  function feedbackMessage(overallPercent, nextModule) {
+    const nextStep = nextModule ? `„${moduleValue(nextModule, "title")}“` : "den noch offenen Aufgaben";
+    if (overallPercent === 0) return `Du stehst am Anfang dieses Lernpakets. Beginne mit ${nextStep} und bearbeite zuerst die offenen Aufgaben.`;
+    if (overallPercent < 25) return `Der Einstieg ist geschafft. Bleibe bei einer Station, bis Aufgaben und Kurzcheck erledigt sind. Als Nächstes bietet sich ${nextStep} an.`;
+    if (overallPercent < 50) return `Du hast eine erste Grundlage aufgebaut. Prüfe offene Selbstchecks und arbeite anschließend bei ${nextStep} weiter.`;
+    if (overallPercent < 75) return `Du hast bereits einen großen Teil geschafft. Sichere jetzt besonders Belege, Erklärungen und noch nicht abgeschlossene Stationen. Weiter geht es mit ${nextStep}.`;
+    if (overallPercent < 100) return `Du bist auf der Zielgeraden. Schließe die letzten Aufgaben und Stationen ab und nutze die Checklisten zur Überarbeitung. Nächster Schritt: ${nextStep}.`;
+    return "Du hast alle Aufgaben bearbeitet und alle Stationen abgeschlossen. Nutze die Ergebnisse jetzt für Wiederholung, Transfer oder eine abschließende Präsentation.";
+  }
+
+  function renderLevelFeedback() {
+    const taskKeys = MODULES.flatMap(expectedTaskKeys);
+    const completed = completedSet();
+    const taskDone = taskKeys.filter(key => state.taskDone[key]).length;
+    const stationDone = MODULES.filter(module => completed.has(module.id)).length;
+    const taskPercent = Math.round(taskDone / taskKeys.length * 100);
+    const stationPercent = Math.round(stationDone / MODULES.length * 100);
+    const overallPercent = Math.round((taskPercent + stationPercent) / 2);
+    const nextModule = MODULES.find(module => !completed.has(module.id));
+    el("levelTaskRing").style.setProperty("--progress", taskPercent);
+    el("levelStationRing").style.setProperty("--progress", stationPercent);
+    el("levelTaskValue").textContent = `${taskPercent}%`;
+    el("levelStationValue").textContent = `${stationPercent}%`;
+    el("levelOverallValue").textContent = `${overallPercent}%`;
+    el("levelFeedbackText").textContent = `${taskDone} von ${taskKeys.length} Aufgaben bearbeitet, ${stationDone} von ${MODULES.length} Stationen abgeschlossen. ${feedbackMessage(overallPercent, nextModule)}`;
+    el("levelFeedbackChart").setAttribute("aria-label", `${taskPercent} Prozent der Aufgaben bearbeitet und ${stationPercent} Prozent der Stationen abgeschlossen; Gesamtfortschritt ${overallPercent} Prozent`);
   }
 
   function renderRingStats() {
@@ -448,9 +485,10 @@
   }
 
   function updateOverviewStats() {
-    const done = state.completed.length;
+    const done = MODULES.filter(module => completedSet().has(module.id)).length;
     el("progressText").textContent = `${done} / ${MODULES.length}`;
     el("progressFill").style.width = `${Math.round(done / MODULES.length * 100)}%`;
+    renderLevelFeedback();
     renderRingStats();
     renderStampGrid();
     renderNav();
@@ -589,7 +627,7 @@
     el("currentPath").textContent = `${moduleValue(module, "part")} · ${moduleValue(module, "title")}`;
     const tasks = module.workshop ? [] : module.tasks[levelId];
     const currentIndex = MODULES.indexOf(module);
-    const stationContent = module.workshop ? workshopHtml(module) : `<div class="task-list">${module.spectrum ? spectrumCard(module) : ""}${tasks.map((task, index) => writingCard(module, task, index)).join("")}${quizCard(module)}</div>`;
+    const stationContent = module.workshop ? workshopHtml(module) : `<div class="task-list">${module.spectrum && levelId !== "experte" ? spectrumCard(module) : ""}${tasks.map((task, index) => writingCard(module, task, index)).join("")}${quizCard(module)}</div>`;
     stationView.innerHTML = stationHeader(module) + stationContent + `
       <div class="station-actions"><button class="button" type="button" data-prev>${currentIndex === 0 ? "Zum Überblick" : "← Vorherige Station"}</button><button class="button primary" type="button" data-complete-station>${completedSet().has(module.id) ? "Markierung zurücknehmen" : "Station abschließen"}</button><button class="button" type="button" data-next>${currentIndex === MODULES.length - 1 ? "Zum Überblick" : "Nächste Station →"}</button></div>
       <div class="feedback" data-station-feedback aria-live="polite"></div>`;
@@ -689,7 +727,7 @@
     });
     stationView.querySelectorAll(`[name="quiz_${module.id}"]`).forEach(radio => radio.addEventListener("change", () => { state.quiz[module.id] = Number(radio.value); saveState(); }));
 
-    if (module.spectrum) {
+    if (module.spectrum && levelId !== "experte") {
       const values = state.spectrum[module.id] || [50, 50, 50, 50, 50];
       const touched = state.spectrumTouched[module.id] || [];
       stationView.querySelectorAll("[data-spectrum]").forEach(input => input.addEventListener("input", () => {
