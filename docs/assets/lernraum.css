@@ -229,6 +229,12 @@ img { max-width: 100%; }
 }
 .button:hover { border-color: var(--red-600); }
 .button.primary { color: #fff; background: var(--red-700); border-color: var(--red-700); }
+.top-actions .top-action-overview { color: #fff; background: var(--blue); border-color: var(--blue); }
+.top-actions .top-action-export { color: #fff; background: var(--amber); border-color: var(--amber); }
+.top-actions .top-action-import { color: #fff; background: var(--green); border-color: var(--green); }
+.top-actions .top-action-overview:hover,
+.top-actions .top-action-export:hover,
+.top-actions .top-action-import:hover { border-color: currentColor; filter: brightness(.9); }
 .content { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding: 34px 0 60px; }
 .hero {
   overflow: hidden;
