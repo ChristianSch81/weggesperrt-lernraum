@@ -8,8 +8,10 @@
       short: "Reproduktion · reaktiv",
       process: "Reproduktion (Vorlage wiederholen)",
       profile: "Grundzüge wiedergeben und sich gegenstandsbezogen äußern. Du arbeitest mit klaren Hilfen und sicherst das Fundament.",
+      strategyLabel: "Operatoren",
       operators: ["Wiedergeben", "Beschreiben"],
       placeholder: "Satzstarter: Im Roman … / Das erkennt man daran, dass …",
+      tip: "Markiere zuerst den Arbeitsauftrag und die verlangte Anzahl. Sammle danach passende Romanstellen in Stichpunkten und formuliere erst dann vollständige Sätze.",
       hero: "Den Roman sicher erschließen",
       intro: "Du sicherst zentrale Handlungsschritte, Figuren, Räume und historische Grundinformationen. Satzstarter, Begriffshilfen und überschaubare Schreibaufträge unterstützen dich.",
       goals: [
@@ -22,7 +24,12 @@
         "Ich kenne die Grundmerkmale eines persönlichen Briefs und kann sie in einer Vorlage richtig anordnen.",
         "Ich kenne die Grundmerkmale eines Tagebucheintrags und kann sie von Brief und E-Mail unterscheiden.",
         "Ich kenne die Grundmerkmale eines inneren Monologs und kann Gedanken einer Figur in der Ich-Form wiedergeben.",
-        "Ich kann einen produktiven Text mithilfe eines Schreibplans verfassen und anhand einer Checkliste prüfen."
+        "Ich kann einen produktiven Text mithilfe eines Schreibplans verfassen und anhand einer Checkliste prüfen.",
+        "Ich kann zentrale Figuren des Romans und ihre Beziehungen mit passenden Beispielen beschreiben.",
+        "Ich kann Durchgangsheim und Jugendwerkhof anhand wichtiger Merkmale unterscheiden.",
+        "Ich kann Regeln und Sanktionen nennen und ihre Folgen für Anja beschreiben.",
+        "Ich kann Merkmale der Sprache der Erziehenden nennen und ihre Wirkung auf Anja beschreiben.",
+        "Ich kann den historischen Hintergrund der DDR-Heimerziehung in Grundzügen wiedergeben."
       ],
       guidance: "Nutze die Satzstarter und konzentriere dich zuerst auf das Wesentliche.",
       evidence: "Ein genauer Romanbeleg oder eine passende Seitenangabe genügt."
@@ -33,12 +40,14 @@
       short: "Rekonstruktion · aktiv",
       process: "Rekonstruktion (Zusammenhänge durchdringen)",
       profile: "Hintergründe benennen, Zusammenhänge rekonstruieren und adressatenbezogen begründen. Du handelst zunehmend selbstständig.",
+      strategyLabel: "Arbeitsweisen",
       operators: ["Rekonstruieren", "Analysieren"],
       placeholder: "Strukturhilfe: Aussage – Romanbeleg – Erklärung der Wirkung",
+      tip: "Lege vor dem Schreiben drei Schritte fest: Kernaussage, geeigneter Romanbeleg und Erklärung des Zusammenhangs oder der Wirkung.",
       hero: "Zusammenhänge analysieren und begründen",
       intro: "Du rekonstruierst Ursachen und Folgen, untersuchst Sprache und Macht und formulierst begründete Urteile. Dabei verknüpfst du Romanbelege mit historischen Informationen.",
       goals: [
-        "Ich kann Operatoren sicher anwenden und den Umfang meiner Antwort an die Aufgabenstellung anpassen.",
+        "Ich kann einen produktiven Text mithilfe eines Schreibplans verfassen und anhand einer Checkliste prüfen.",
         "Ich kann Handlungsschritte als Ursache-Folge-Zusammenhang rekonstruieren und mit Romanbelegen erklären.",
         "Ich kann sprachliche und räumliche Gestaltungsmittel in ihrer Wirkung analysieren.",
         "Ich kann eine Figurenperspektive aus Situation, Wissen, Gefühlen und Absicht erschließen.",
@@ -58,12 +67,14 @@
       short: "Transformation · konstruktiv",
       process: "Transformation (Übertragung und Transfer)",
       profile: "Transfer leisten, diskursiv reflektieren und konstruktive Lösungen entwickeln. Du prüfst Perspektiven und Grenzen deines Urteils.",
+      strategyLabel: "Denkhandlungen",
       operators: ["Transfer leisten", "Reflektieren"],
       placeholder: "Strukturhilfe: These – Gegenposition – Abwägung – begründeter Transfer",
+      tip: "Skizziere zunächst These, Gegenperspektive und Abwägung. Ordne danach jedem Schritt einen Beleg oder Maßstab zu und prüfe die Grenzen deiner Deutung.",
       hero: "Transfer leisten und Positionen reflektieren",
       intro: "Du prüfst Deutungen, reflektierst konkurrierende Perspektiven und überträgst Erkenntnisse auf Fragen von Menschenwürde, Erinnerungskultur und demokratischem Handeln.",
       goals: [
-        "Ich kann komplexe Operatoren analysieren und daraus ein eigenständiges Bearbeitungskonzept ableiten.",
+        "Ich kann komplexe Schreib- und Transferaufträge eigenständig strukturieren und daraus ein Bearbeitungskonzept ableiten.",
         "Ich kann Deutungen prüfen und alternative Lesarten argumentativ gegeneinander abwägen.",
         "Ich kann Romanbelege, historische Quellen und ethische Maßstäbe methodisch transparent vernetzen.",
         "Ich kann Perspektive und Wissensstand einer Figur einschließlich ihrer Leerstellen reflektieren.",
@@ -85,18 +96,38 @@
       focus: "Arbeitsaufträge entschlüsseln und Antworten genau an nennen, beschreiben, zusammenfassen, erklären, begründen, ordnen und vergleichen ausrichten.",
       question: "Woran erkenne ich, was eine operationalisierte Fragestellung von meiner Antwort verlangt?",
       quick: { prompt: "Welcher Operator verlangt ausdrücklich einen nachvollziehbaren Grund oder Romanbeleg?", options: ["nennen", "begründen", "ordnen"], answer: 1, explanation: "Begründen verlangt eine Aussage und mindestens einen nachvollziehbaren Grund oder Beleg." },
+      levelMeta: {
+        regel: {
+          part: "Schreibwerkstatt · Planung",
+          title: "Schreibaufträge planen und umsetzen",
+          focus: "Einen produktiven Schreibauftrag erschließen, einen Schreibplan entwickeln und den Text kriteriengeleitet vorbereiten.",
+          question: "Wie hilft ein Schreibplan dabei, einen produktiven Text vollständig und adressatengerecht zu verfassen?",
+          form: "Schreibplanung",
+          icon: "✎",
+          quick: { prompt: "Welcher Schreibplan bereitet einen produktiven Text am besten vor?", options: ["Nur die gewünschte Wortzahl notieren.", "Situation, Perspektive, Absicht, Romanwissen und Aufbau in Stichpunkten planen.", "Den fertigen Text zuerst abschreiben und danach gliedern."], answer: 1, explanation: "Ein hilfreicher Schreibplan klärt vor dem Formulieren Situation, Perspektive, Schreibabsicht, Romanwissen und Aufbau." }
+        },
+        experte: {
+          part: "Transfer · Planung",
+          title: "Komplexe Schreib- und Transferaufträge strukturieren",
+          focus: "Anspruchsvolle Schreib- und Transferaufträge in Teilfragen zerlegen, Perspektiven ordnen und ein tragfähiges Bearbeitungskonzept entwickeln.",
+          question: "Wie wird aus einer komplexen Aufgabenstellung ein schlüssiges und reflektiertes Bearbeitungskonzept?",
+          form: "Konzeptarbeit",
+          icon: "◇",
+          quick: { prompt: "Was gehört zu einem tragfähigen Bearbeitungskonzept für eine komplexe Transferaufgabe?", options: ["Nur eine spontane Meinung.", "These, Gegenperspektive, Belege, Maßstäbe, Abwägung und Grenzen.", "Möglichst viele unverbundene Einzelinformationen."], answer: 1, explanation: "Ein tragfähiges Konzept verbindet Positionen, Belege und Maßstäbe und macht auch Grenzen der Übertragung sichtbar." }
+        }
+      },
       tasks: {
         mindest: [
           { title: "Operator und Antwortform sichern", help: "Nennen = knapp aufzählen; beschreiben = Merkmale in Sätzen darstellen; zusammenfassen = nur das Wesentliche in eigenen Worten wiedergeben.", prompt: "Nenne die drei Operatoren nennen, beschreiben und zusammenfassen. Schreibe zu jedem Operator einen passenden Satzanfang für eine Antwort zu Weggesperrt.", min: 75, criteria: ["Ich nenne alle drei Operatoren.", "Jeder Satzanfang passt zur verlangten Antwortform.", "Meine Beispiele beziehen sich auf den Roman."] },
           { title: "Operationalisierte Frage beantworten", help: "Beschreiben bedeutet: Stelle erkennbare Merkmale oder Handlungen in vollständigen Sätzen dar. Deute noch nicht ausführlich.", prompt: "Operator: Beschreibe in drei vollständigen Sätzen, wie Anjas Handlungsspielraum auf dem Weg ins Durchgangsheim eingeschränkt wird. Nenne ein konkretes Romanbeispiel.", min: 85, criteria: ["Ich antworte in drei vollständigen Sätzen.", "Ich beschreibe sichtbare Handlungen oder Entscheidungen anderer.", "Ich nenne ein passendes Romanbeispiel."] }
         ],
         regel: [
-          { title: "Operatoren voneinander abgrenzen", help: "Erklären macht einen Zusammenhang deutlich; begründen sichert eine Aussage mit Gründen oder Belegen; vergleichen arbeitet Gemeinsamkeiten und Unterschiede nach Kriterien heraus.", prompt: "Grenze erklären, begründen und vergleichen voneinander ab. Formuliere zu jedem Operator eine passende Beispielfrage zum Roman.", min: 130, criteria: ["Ich beschreibe die Leistung jedes Operators.", "Meine drei Beispielfragen sind eindeutig operationalisiert.", "Ich zeige Unterschiede im erwarteten Antwortaufbau."] },
-          { title: "Antwort planen und ausführen", help: "Struktur: Aussage – Ursache oder Zusammenhang – konkreter Romanbeleg – Wirkung.", prompt: "Operator: Erkläre, wie institutionelle Regeln Anjas Verhalten beeinflussen. Plane die Antwort kurz und formuliere anschließend einen zusammenhängenden Absatz mit mindestens zwei Romanbelegen.", min: 160, criteria: ["Mein Absatz erklärt einen Zusammenhang.", "Ich nutze mindestens zwei konkrete Romanbelege.", "Ich verknüpfe Beleg und Wirkung nachvollziehbar."] }
+          { tag: "Schreibplan", title: "Produktiven Schreibauftrag erschließen", tip: "Notiere noch keinen fertigen Text. Kläre zuerst Situation, Zeitpunkt, Figurenwissen, Perspektive, Schreibabsicht und Merkmale des inneren Monologs.", prompt: "Erstelle einen Schreibplan zu diesem Auftrag: Verfasse aus Anjas Perspektive einen inneren Monolog unmittelbar nach ihrer Ankunft im Heim. Plane Situation, Wissen, Gefühle, inneren Konflikt, Romanbelege und Aufbau.", min: 130, criteria: ["Mein Schreibplan bezieht sich auf den genannten Zeitpunkt und Anjas damaligen Wissensstand.", "Ich plane Gefühle, inneren Konflikt und mindestens zwei passende Romanbelege.", "Ich notiere einen nachvollziehbaren Aufbau und Merkmale des inneren Monologs."] },
+          { tag: "Textentwurf", title: "Schreibplan in einen Text überführen", tip: "Wähle aus deinem Schreibplan die stärksten Punkte aus. Beginne mitten in Anjas Gedanken und verbinde Gefühl, Erinnerung und Konflikt, ohne die Handlung nur nachzuerzählen.", prompt: "Nutze deinen Schreibplan aus der vorherigen Aufgabe. Verfasse den Einstieg und einen ausgearbeiteten Hauptabschnitt des inneren Monologs. Prüfe anschließend mit der Checkliste, ob Text und Plan zusammenpassen.", min: 160, criteria: ["Mein Text setzt die Situation und Perspektive aus meinem Schreibplan erkennbar um.", "Ich gestalte Anjas Gedanken, Gefühle und inneren Konflikt figuren- und kapitelnah.", "Ich prüfe den Text anhand der Kriterien und überarbeite mindestens eine Stelle."] }
         ],
         experte: [
-          { title: "Operatoren als Denkhandlungen prüfen", help: "Komplexe Antworten verbinden Analyse, Urteil und Reflexion, ohne die einzelnen Denkhandlungen zu vermischen.", prompt: "Untersuche, wie sich die Operatoren analysieren, beurteilen und erörtern im Erkenntnisziel unterscheiden. Entwickle zu jedem Operator eine anspruchsvolle Fragestellung zu Macht und Menschenwürde im Roman.", min: 190, criteria: ["Ich unterscheide drei Erkenntnisziele.", "Meine Fragestellungen sind fachlich und sprachlich eindeutig.", "Ich begründe die Zuordnung der Operatoren."] },
-          { title: "Fragestellung transformieren", help: "Eine Transformation überträgt Erkenntnisse, macht Voraussetzungen sichtbar und reflektiert Grenzen.", prompt: "Überführe die einfache Frage „Wie wird Anja kontrolliert?“ in eine mehrteilige Transferaufgabe. Formuliere danach einen Erwartungshorizont mit Analyse, Gegenposition und reflektiertem Urteil.", min: 210, criteria: ["Die neue Aufgabe enthält einen klaren Transferoperator.", "Der Erwartungshorizont unterscheidet Analyse und Urteil.", "Ich berücksichtige Gegenposition und Grenzen."] }
+          { tag: "Konzept", title: "Komplexen Transferauftrag strukturieren", tip: "Zerlege den Auftrag in Untersuchung, Gegenperspektive, historischen Maßstab und Transfer. Notiere zu jedem Teil nur Funktion und mögliche Belegart.", prompt: "Entwickle ein Bearbeitungskonzept zur Frage, wie Weggesperrt institutionelle Kontrolle darstellt und welche Kriterien daraus für menschenwürdige pädagogische Einrichtungen abgeleitet werden können. Plane These, Gegenperspektive, Roman- und Sachbelege, Maßstäbe sowie Grenzen des Transfers.", min: 190, criteria: ["Mein Konzept trennt Romananalyse, historischen Kontext und gegenwärtigen Transfer.", "Ich plane eine Gegenperspektive sowie geeignete Belege und Maßstäbe.", "Ich mache Grenzen und mögliche Verkürzungen des Transfers sichtbar."] },
+          { tag: "Reflexion", title: "Gestaltungsentscheidungen begründen", tip: "Wähle zwei Entscheidungen aus deinem Konzept, die die Wirkung besonders beeinflussen. Begründe jeweils Absicht, erwartete Wirkung und eine mögliche Grenze.", prompt: "Wähle zwei zentrale Entscheidungen aus deinem Bearbeitungskonzept. Begründe, wie sie Aufbau, Perspektivenvielfalt und Wirkung des späteren Produkts steuern, und reflektiere jeweils eine mögliche Grenze.", min: 210, criteria: ["Ich benenne zwei konkrete Entscheidungen aus meinem vorherigen Konzept.", "Ich begründe ihre Funktion und erwartete Wirkung nachvollziehbar.", "Ich reflektiere zu jeder Entscheidung eine Grenze oder Alternative."] }
         ]
       }
     },
@@ -281,24 +312,32 @@
       label: "E-Mail",
       situation: "Nach dem Streit über politisches Engagement schreibt Anja Tom. Sie erklärt ihre Entscheidung und bittet ihn, ihre Beweggründe ernst zu nehmen.",
       planning: ["Was ist unmittelbar passiert?", "Was möchte Anja Tom mitteilen oder von ihm erreichen?", "Welche Gefühle und Werte bestimmen ihre Nachricht?", "Welches konkrete Romanwissen sichert die Kapiteltreue?"],
+      planningTips: ["Notiere den Auslöser in ein bis zwei Stichpunkten. Bleibe bei dem, was unmittelbar vor der Nachricht geschehen ist.", "Formuliere Anjas Schreibabsicht als Verb, zum Beispiel erklären, überzeugen oder um Verständnis bitten.", "Wähle zwei Gefühle oder Werte, die in der Situation miteinander in Spannung stehen könnten.", "Suche eine passende Szene oder Aussage aus dem Roman und notiere nur Seitenzahl und Stichwort."],
+      textTip: "Nutze deinen Schreibplan als Reihenfolge: Anlass – Anliegen – Begründung – Bitte oder Ausblick. Prüfe, ob Tom als Adressat in der Wortwahl erkennbar bleibt.",
       features: ["An, Von und Betreff", "passende Anrede", "klare Absätze und verständliches Anliegen", "direkter Bezug zu Tom als Adressat", "Schlussformel und Name", "Ich-Perspektive, Buchwissen und Kapiteltreue"]
     },
     brief: {
       label: "Persönlicher Brief",
       situation: "Nach ihrer Rückkehr schreibt Anja ihrer Mutter. Sie schildert, was die Zeit in den Einrichtungen mit ihr gemacht hat und was sie sich für ihre Beziehung wünscht.",
       planning: ["Auf welchen Zeitpunkt blickt Anja zurück?", "Was soll die Mutter verstehen?", "Welche Gefühle, Vorwürfe oder Wünsche spricht Anja aus?", "Welche zwei Romanereignisse sollen im Brief vorkommen?"],
+      planningTips: ["Lege einen genauen Schreibzeitpunkt fest. So weißt du, welche Ereignisse Anja bereits kennen kann.", "Notiere einen Kernsatz mit dem Muster: Meine Mutter soll verstehen, dass …", "Ordne deine Stichpunkte in drei Gruppen: Gefühl, Vorwurf und Wunsch. Du musst noch keine Sätze formulieren.", "Wähle zwei Ereignisse, die Anjas Anliegen besonders gut erklären, und notiere Seitenzahlen oder Kapitel."],
+      textTip: "Ordne den Brief vom Anlass über zwei ausgewählte Erfahrungen hin zu Anjas Wunsch. Lass die Mutter durch direkte Anrede als Empfängerin erkennbar werden.",
       features: ["Ort und Datum", "passende Anrede", "Einleitung, Hauptteil und Schluss", "klarer Adressatenbezug und erkennbare Absicht", "Grußformel und Name", "Figurenwissen, Buchwissen und Kapiteltreue"]
     },
     tagebuch: {
       label: "Tagebucheintrag",
       situation: "Am Abend nach ihrem ersten Tag in Torgau hält Anja fest, was sie erlebt hat, wovor sie Angst hat und welche Gedanken sie niemandem sagen kann.",
       planning: ["Welche Ereignisse des Tages beschäftigen Anja?", "Welche Gefühle löst die Situation aus?", "Welche Fragen, Zweifel oder Hoffnungen hat sie?", "Was darf Anja zu diesem Zeitpunkt bereits wissen?"],
+      planningTips: ["Wähle höchstens drei Tagesereignisse, die Anja innerlich besonders beschäftigen.", "Verbinde jedes ausgewählte Ereignis mit einem möglichen Gefühl, ohne das Gefühl schon auszuformulieren.", "Notiere offene Fragen, auf die Anja an diesem Abend noch keine sichere Antwort haben kann.", "Ziehe eine Wissensgrenze: Streiche alles, was Anja erst später im Roman erfährt."],
+      textTip: "Wechsle zwischen kurzer Erinnerung und persönlicher Reaktion. Ein Tagebucheintrag darf subjektiv und sprunghaft sein, muss aber zum Wissensstand dieses Abends passen.",
       features: ["Datum, ggf. Uhrzeit", "konsequente Ich-Perspektive", "Gedanken, Gefühle und spontane Reaktionen", "subjektive Wertung und innerer Konflikt", "kein äußerer Adressat und keine Pflicht-Grußformel", "Buchwissen und Kapiteltreue"]
     },
     monolog: {
       label: "Innerer Monolog",
       situation: "Kurz vor einer Entscheidung über die Montagsdemonstration denkt Anja über Toms Warnungen, ihre Erfahrungen und ihr Bedürfnis nach Freiheit nach.",
       planning: ["Zwischen welchen Möglichkeiten schwankt Anja?", "Welche Gedanken sprechen für Sicherheit, welche für Engagement?", "Welche Erinnerungen beeinflussen sie?", "Welcher Gedanke oder welche offene Entscheidung steht am Ende?"],
+      planningTips: ["Formuliere die beiden Möglichkeiten zunächst neutral, ohne dich schon für eine Seite zu entscheiden.", "Lege eine Zweispaltenliste an: Gründe für Sicherheit und Gründe für Engagement.", "Wähle eine Erinnerung, die den inneren Konflikt verschärft, statt ihn sofort zu lösen.", "Plane einen letzten Gedanken, der Spannung offenhält oder eine Entscheidung nur andeutet."],
+      textTip: "Beginne mitten im Gedankenfluss. Nutze Fragen, kurze Ausrufe oder Satzabbrüche sparsam, damit Anjas innerer Konflikt hörbar wird, ohne ihn vorschnell zu lösen.",
       features: ["unmittelbare Ich-Perspektive im Präsens", "Gedankenfluss mit Fragen, Ausrufen oder Satzabbrüchen", "kein äußerer Erzähler und kein äußerer Adressat", "sichtbarer innerer Konflikt", "figurennahe Sprache und offene Entscheidung", "Buchwissen und Kapiteltreue"]
     }
   };
@@ -310,7 +349,7 @@
   };
 
   const PROGRESS_GROUPS = [
-    { title: "Operatoren & Einstieg", range: "Stationen 1–2", ids: ["operatoren", "einstieg"] },
+    { title: "Operatoren & Einstieg", titles: { regel: "Schreibplanung & Einstieg", experte: "Konzept & Einstieg" }, range: "Stationen 1–2", ids: ["operatoren", "einstieg"] },
     { title: "Handlung & Räume", range: "Stationen 3–4", ids: ["weg", "raeume"] },
     { title: "Sprache & Geschichte", range: "Stationen 5–6", ids: ["sprache", "quellen"] },
     { title: "Würde & Dilemma", range: "Stationen 7–8", ids: ["wuerde", "dilemma"] },
@@ -338,6 +377,9 @@
   function esc(value) { return String(value).replace(/[&<>"]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch])); }
   function wordCount(value) { return String(value).trim() ? String(value).trim().split(/\s+/).length : 0; }
   function moduleById(id) { return MODULES.find(module => module.id === id); }
+  function moduleValue(module, property) { return module.levelMeta && module.levelMeta[levelId] && module.levelMeta[levelId][property] !== undefined ? module.levelMeta[levelId][property] : module[property]; }
+  function moduleQuick(module) { return moduleValue(module, "quick"); }
+  function groupTitle(group) { return group.titles && group.titles[levelId] ? group.titles[levelId] : group.title; }
   function taskKey(moduleId, index) { return `${moduleId}_${index}`; }
   function completedSet() { return new Set(state.completed); }
 
@@ -347,7 +389,8 @@
     el("levelBadge").textContent = `${level.label} ${level.code}`;
     el("heroTitle").textContent = level.hero;
     el("heroText").textContent = level.intro;
-    el("levelProfile").innerHTML = `<div><span class="profile-code">${esc(level.code)}</span><strong>${esc(level.process)}</strong><p>${esc(level.profile)}</p></div><div class="profile-operators"><span>Operatoren</span>${level.operators.map(operator => `<b>${esc(operator)}</b>`).join("")}</div>`;
+    el("levelProfile").innerHTML = `<div><span class="profile-code">${esc(level.code)}</span><strong>${esc(level.process)}</strong><p>${esc(level.profile)}</p></div><div class="profile-operators"><span>${esc(level.strategyLabel)}</span>${level.operators.map(operator => `<b>${esc(operator)}</b>`).join("")}</div>`;
+    el("targetHeading").textContent = `Deine ${level.goals.length} Teillernziele`;
     el("targetList").innerHTML = level.goals.map(goal => `<li>${esc(goal)}</li>`).join("");
     document.querySelectorAll("[data-level-link]").forEach(link => {
       if (link.dataset.levelLink === levelId) link.setAttribute("aria-current", "page");
@@ -359,7 +402,7 @@
     const done = completedSet();
     stationNav.innerHTML = MODULES.map((module, index) => `
       <button class="nav-button ${activeId === module.id ? "active" : ""} ${done.has(module.id) ? "done" : ""}" type="button" data-open="${module.id}">
-        <span class="nav-number">${index + 1}</span><span>${esc(module.title)}</span><span class="done-mark">${done.has(module.id) ? "✓" : ""}</span>
+        <span class="nav-number">${index + 1}</span><span>${esc(moduleValue(module, "title"))}</span><span class="done-mark">${done.has(module.id) ? "✓" : ""}</span>
       </button>`).join("");
     stationNav.querySelectorAll("[data-open]").forEach(button => button.addEventListener("click", () => showStation(button.dataset.open)));
   }
@@ -368,7 +411,7 @@
     const done = completedSet();
     el("stampGrid").innerHTML = MODULES.map((module, index) => `
       <button class="stamp-card ${done.has(module.id) ? "done" : ""}" type="button" data-stamp="${module.id}">
-        <span class="stamp-no">${index + 1}</span><span><span class="stamp-title">${esc(module.title)}</span><span class="stamp-focus">${esc(module.focus)}</span></span><strong>${done.has(module.id) ? "✓" : "→"}</strong>
+        <span class="stamp-no">${index + 1}</span><span><span class="stamp-title">${esc(moduleValue(module, "title"))}</span><span class="stamp-focus">${esc(moduleValue(module, "focus"))}</span></span><strong>${done.has(module.id) ? "✓" : "→"}</strong>
       </button>`).join("");
     el("stampGrid").querySelectorAll("[data-stamp]").forEach(button => button.addEventListener("click", () => showStation(button.dataset.stamp)));
   }
@@ -391,9 +434,10 @@
       const taskDone = taskKeys.filter(key => state.taskDone[key]).length;
       const stationPercent = Math.round(stationDone / modules.length * 100);
       const taskPercent = Math.round(taskDone / taskKeys.length * 100);
-      return `<button class="ring-card" type="button" data-progress-group="${groupIndex}" aria-label="${esc(group.title)}: ${taskPercent} Prozent der Aufgaben erledigt, ${stationPercent} Prozent der Stationen abgeschlossen">
+      const title = groupTitle(group);
+      return `<button class="ring-card" type="button" data-progress-group="${groupIndex}" aria-label="${esc(title)}: ${taskPercent} Prozent der Aufgaben erledigt, ${stationPercent} Prozent der Stationen abgeschlossen">
         <span class="progress-ring" style="--station-progress:${stationPercent};--task-progress:${taskPercent}" aria-hidden="true"><strong class="ring-value">${taskPercent}%</strong></span>
-        <span class="ring-copy"><strong>${esc(group.title)}</strong><span>${esc(group.range)}</span><small>${taskDone} / ${taskKeys.length} Aufgaben · ${stationDone} / ${modules.length} Stationen</small></span>
+        <span class="ring-copy"><strong>${esc(title)}</strong><span>${esc(group.range)}</span><small>${taskDone} / ${taskKeys.length} Aufgaben · ${stationDone} / ${modules.length} Stationen</small></span>
       </button>`;
     }).join("");
     ringGrid.querySelectorAll("[data-progress-group]").forEach(button => button.addEventListener("click", () => {
@@ -423,10 +467,10 @@
 
   function stationHeader(module) {
     return `<section class="section station-header">
-      <div><span class="eyebrow">${esc(level.code)} · ${esc(module.part)}</span><h1>${esc(module.title)}</h1><p class="section-intro">${esc(module.focus)}</p>
-        <div class="station-meta"><span class="pill">${esc(module.time)}</span><span class="pill">${esc(module.form)}</span><span class="pill">${esc(level.short)}</span></div>
-        <div class="guidance"><div class="guidance-box"><strong>Leitfrage</strong><p>${esc(module.question)}</p></div><div class="guidance-box"><strong>Arbeitshinweis</strong><p>${esc(level.guidance)} ${esc(level.evidence)}</p></div></div>
-      </div><div class="station-icon" aria-hidden="true">${esc(module.icon)}</div>
+      <div><span class="eyebrow">${esc(level.code)} · ${esc(moduleValue(module, "part"))}</span><h1>${esc(moduleValue(module, "title"))}</h1><p class="section-intro">${esc(moduleValue(module, "focus"))}</p>
+        <div class="station-meta"><span class="pill">${esc(module.time)}</span><span class="pill">${esc(moduleValue(module, "form"))}</span><span class="pill">${esc(level.short)}</span></div>
+        <div class="guidance"><div class="guidance-box"><strong>Leitfrage</strong><p>${esc(moduleValue(module, "question"))}</p></div><div class="guidance-box"><strong>Arbeitshinweis</strong><p>${esc(level.guidance)} ${esc(level.evidence)}</p></div></div>
+      </div><div class="station-icon" aria-hidden="true">${esc(moduleValue(module, "icon"))}</div>
     </section>`;
   }
 
@@ -450,28 +494,53 @@
     return "klare Kontrolle";
   }
 
+  function taskHint(task) {
+    if (task.tip) return task.tip;
+    if (task.help) return task.help;
+    const checkpoints = task.criteria.slice(0, 3).map(criterion => criterion.replace(/^Ich\s+/, "").replace(/\.$/, ""));
+    return `${level.tip} Nutze als Orientierung: ${checkpoints.join("; ")}.`;
+  }
+
+  function tipControl(id, hint) {
+    return `<button class="tip-button" type="button" data-tip-toggle="${esc(id)}" aria-expanded="false" aria-controls="${esc(id)}"><span class="tip-face" aria-hidden="true">🙂!</span><span>Tipp</span></button>
+      <div class="tip-panel" id="${esc(id)}" hidden><strong>Hinweis zum Weiterdenken</strong><p>${esc(hint)}</p></div>`;
+  }
+
+  function bindTips() {
+    stationView.querySelectorAll("[data-tip-toggle]").forEach(button => button.addEventListener("click", () => {
+      const panel = document.getElementById(button.dataset.tipToggle);
+      if (!panel) return;
+      const open = button.getAttribute("aria-expanded") === "true";
+      button.setAttribute("aria-expanded", String(!open));
+      button.classList.toggle("open", !open);
+      panel.hidden = open;
+    }));
+  }
+
   function writingCard(module, task, index) {
     const key = taskKey(module.id, index);
     const value = state.answers[key] || "";
     const checked = state.criteria[key] || [];
     const done = !!state.taskDone[key];
+    const tipId = `tip_${module.id}_${levelId}_${index}`;
     return `<article class="task-card ${done ? "complete" : ""}" data-writing-card="${index}">
-      <div class="task-head"><div><span class="task-index">${esc(level.operators[index])} · Aufgabe ${index + 1}</span><h2>${esc(task.title)}</h2>${task.help ? `<p class="operator-help"><strong>Operator-Hilfe:</strong> ${esc(task.help)}</p>` : ""}<p class="task-prompt">${esc(task.prompt)}</p></div><span class="task-status">${done ? "erledigt" : "offen"}</span></div>
-      <div class="field"><label for="answer_${module.id}_${index}">Deine Antwort</label><textarea id="answer_${module.id}_${index}" data-answer-index="${index}" placeholder="${esc(level.placeholder)}">${esc(value)}</textarea><div class="counter"><span data-word-count>${wordCount(value)} Wörter</span><span>Orientierung: mindestens ${task.min} Wörter</span></div></div>
-      <div class="criteria" role="group" aria-label="Selbstcheck">
-        <strong>Selbstcheck</strong>${task.criteria.map((criterion, criterionIndex) => `<label class="criterion"><input type="checkbox" data-criterion="${criterionIndex}" ${checked[criterionIndex] ? "checked" : ""}> <span>${esc(criterion)}</span></label>`).join("")}
+      <div class="task-head"><div><span class="task-index">${esc(task.tag || level.operators[index])} · Aufgabe ${index + 1}</span><h2>${esc(task.title)}</h2><p class="task-prompt">${esc(task.prompt)}</p></div><span class="task-status">${done ? "erledigt" : "offen"}</span></div>
+      <div class="field"><div class="field-label-row"><label for="answer_${module.id}_${index}">Deine Antwort</label>${tipControl(tipId, taskHint(task))}</div><textarea id="answer_${module.id}_${index}" data-answer-index="${index}" placeholder="${esc(level.placeholder)}">${esc(value)}</textarea><div class="counter"><span data-word-count>${wordCount(value)} Wörter</span><span>Orientierung: mindestens ${task.min} Wörter</span></div></div>
+      <div class="criteria" role="group" aria-label="Selbstcheck zur Aufgabe ${esc(task.title)}">
+        <strong>Selbstcheck zu deiner Antwort</strong><p class="selfcheck-copy">Prüfe jetzt genau deine Antwort zur Aufgabe „${esc(task.title)}“ oben. Hake ein Kriterium nur ab, wenn du die passende Stelle in deinem Text zeigen kannst. Fehlt etwas, überarbeite zuerst deine Antwort.</p>${task.criteria.map((criterion, criterionIndex) => `<label class="criterion"><input type="checkbox" data-criterion="${criterionIndex}" ${checked[criterionIndex] ? "checked" : ""}> <span>${esc(criterion)}</span></label>`).join("")}
       </div>
       <button class="button" type="button" data-check-writing="${index}">Aufgabe prüfen</button><div class="feedback" data-writing-feedback aria-live="polite"></div>
     </article>`;
   }
 
   function quizCard(module) {
+    const quick = moduleQuick(module);
     const selected = state.quiz[module.id];
     const key = taskKey(module.id, "quiz");
     const done = !!state.taskDone[key];
     return `<article class="task-card ${done ? "complete" : ""}" data-quiz-card>
-      <div class="task-head"><div><span class="task-index">Kurzcheck</span><h2>Verständnis prüfen</h2><p class="task-prompt">${esc(module.quick.prompt)}</p></div><span class="task-status">${done ? "richtig" : "offen"}</span></div>
-      <div class="choice-list">${module.quick.options.map((option, index) => `<label class="choice"><input type="radio" name="quiz_${module.id}" value="${index}" ${Number(selected) === index ? "checked" : ""}> <span>${esc(option)}</span></label>`).join("")}</div>
+      <div class="task-head"><div><span class="task-index">Kurzcheck</span><h2>Verständnis prüfen</h2><p class="task-prompt">${esc(quick.prompt)}</p></div><span class="task-status">${done ? "richtig" : "offen"}</span></div>
+      <div class="choice-list">${quick.options.map((option, index) => `<label class="choice"><input type="radio" name="quiz_${module.id}" value="${index}" ${Number(selected) === index ? "checked" : ""}> <span>${esc(option)}</span></label>`).join("")}</div>
       <button class="button" type="button" data-check-quiz>Antwort prüfen</button><div class="feedback" data-quiz-feedback aria-live="polite"></div>
     </article>`;
   }
@@ -501,11 +570,11 @@
       <div class="writing-form-tabs" role="group" aria-label="Schreibform auswählen">${WRITING_FORM_ORDER.map(formId => `<button class="button ${formId === activeFormId ? "primary" : ""}" type="button" data-writing-form="${formId}" aria-pressed="${formId === activeFormId}">${esc(WRITING_FORMS[formId].label)}${state.taskDone[taskKey(module.id, `workshop_${formId}`)] ? " ✓" : ""}</button>`).join("")}</div>
       <div class="writing-situation"><strong>Schreibauftrag: ${esc(form.label)}</strong><p>${esc(form.situation)}</p></div>
       <h3>1. Schreibplan</h3>
-      <div class="workshop-plan">${form.planning.map((question, index) => `<div class="field"><label for="workshopPlan${index}">${esc(question)}</label><textarea id="workshopPlan${index}" class="plan-area" data-workshop-plan="${index}" placeholder="Notiere Stichpunkte oder kurze Sätze.">${esc(draft.plans[index] || "")}</textarea></div>`).join("")}</div>
+      <div class="workshop-plan">${form.planning.map((question, index) => { const tipId = `tip_workshop_${activeFormId}_plan_${index}`; return `<div class="field"><div class="field-label-row"><label for="workshopPlan${index}">${esc(question)}</label>${tipControl(tipId, form.planningTips[index])}</div><textarea id="workshopPlan${index}" class="plan-area" data-workshop-plan="${index}" placeholder="Notiere Stichpunkte oder kurze Sätze.">${esc(draft.plans[index] || "")}</textarea></div>`; }).join("")}</div>
       <h3>2. Text verfassen</h3>
-      <div class="field"><label for="workshopText">Dein Text: ${esc(form.label)}</label><textarea id="workshopText" class="writing-area" data-workshop-text placeholder="${esc(level.placeholder)}">${esc(draft.text || "")}</textarea><div class="counter"><span data-workshop-count>${wordCount(draft.text)} Wörter</span><span>Zielbereich: ${settings.minWords}–${settings.maxWords} Wörter</span></div></div>
-      <h3>3. Textsortenmerkmale und Buchbezug prüfen</h3>
-      <div class="criteria workshop-criteria" role="group" aria-label="Merkmale für ${esc(form.label)}">${form.features.map((feature, index) => `<label class="criterion"><input type="checkbox" data-workshop-check="${index}" ${draft.checks[index] ? "checked" : ""}> <span>${esc(feature)}</span></label>`).join("")}</div>
+      <div class="field"><div class="field-label-row"><label for="workshopText">Dein Text: ${esc(form.label)}</label>${tipControl(`tip_workshop_${activeFormId}_text`, form.textTip)}</div><textarea id="workshopText" class="writing-area" data-workshop-text placeholder="${esc(level.placeholder)}">${esc(draft.text || "")}</textarea><div class="counter"><span data-workshop-count>${wordCount(draft.text)} Wörter</span><span>Zielbereich: ${settings.minWords}–${settings.maxWords} Wörter</span></div></div>
+      <h3>3. Selbstcheck zu deinem Text</h3>
+      <div class="criteria workshop-criteria" role="group" aria-label="Selbstcheck für ${esc(form.label)}"><p class="selfcheck-copy">Prüfe jetzt den ${esc(form.label)}-Text, den du direkt über dieser Checkliste verfasst hast. Hake nur ab, was im Text oder im Schreibplan tatsächlich erkennbar ist. Ergänze fehlende Merkmale vor der abschließenden Prüfung.</p>${form.features.map((feature, index) => `<label class="criterion"><input type="checkbox" data-workshop-check="${index}" ${draft.checks[index] ? "checked" : ""}> <span>${esc(feature)}</span></label>`).join("")}</div>
       <button class="button primary" type="button" data-evaluate-workshop>Schreibform prüfen</button>
       <div class="feedback ${formDone ? "good" : ""}" data-workshop-feedback aria-live="polite">${formDone ? `${esc(form.label)} ist vollständig geprüft und gespeichert.` : "Fülle den Schreibplan aus, schreibe deinen Text und bestätige die Merkmale."}</div>
     </section>`;
@@ -517,13 +586,14 @@
     activeId = id;
     overviewView.classList.add("hidden");
     stationView.classList.remove("hidden");
-    el("currentPath").textContent = `${module.part} · ${module.title}`;
+    el("currentPath").textContent = `${moduleValue(module, "part")} · ${moduleValue(module, "title")}`;
     const tasks = module.workshop ? [] : module.tasks[levelId];
     const currentIndex = MODULES.indexOf(module);
     const stationContent = module.workshop ? workshopHtml(module) : `<div class="task-list">${module.spectrum ? spectrumCard(module) : ""}${tasks.map((task, index) => writingCard(module, task, index)).join("")}${quizCard(module)}</div>`;
     stationView.innerHTML = stationHeader(module) + stationContent + `
       <div class="station-actions"><button class="button" type="button" data-prev>${currentIndex === 0 ? "Zum Überblick" : "← Vorherige Station"}</button><button class="button primary" type="button" data-complete-station>${completedSet().has(module.id) ? "Markierung zurücknehmen" : "Station abschließen"}</button><button class="button" type="button" data-next>${currentIndex === MODULES.length - 1 ? "Zum Überblick" : "Nächste Station →"}</button></div>
       <div class="feedback" data-station-feedback aria-live="polite"></div>`;
+    bindTips();
     if (module.workshop) bindWorkshop(module); else bindStation(module, tasks);
     bindStationActions(module);
     renderNav();
@@ -572,6 +642,7 @@
   }
 
   function bindStation(module, tasks) {
+    const quick = moduleQuick(module);
     stationView.querySelectorAll("[data-answer-index]").forEach(textarea => {
       const index = Number(textarea.dataset.answerIndex);
       const key = taskKey(module.id, index);
@@ -607,10 +678,10 @@
       const feedback = stationView.querySelector("[data-quiz-feedback]");
       if (!selected) { feedback.className = "feedback warn"; feedback.textContent = "Wähle zuerst eine Antwort aus."; return; }
       state.quiz[module.id] = Number(selected.value);
-      const ok = Number(selected.value) === module.quick.answer;
+      const ok = Number(selected.value) === quick.answer;
       state.taskDone[taskKey(module.id, "quiz")] = ok;
       feedback.className = `feedback ${ok ? "good" : "warn"}`;
-      feedback.textContent = `${ok ? "Richtig. " : "Noch nicht richtig. "}${module.quick.explanation}`;
+      feedback.textContent = `${ok ? "Richtig. " : "Noch nicht richtig. "}${quick.explanation}`;
       const card = quizButton.closest(".task-card");
       card.classList.toggle("complete", ok);
       card.querySelector(".task-status").textContent = ok ? "richtig" : "offen";
